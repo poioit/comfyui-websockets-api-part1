@@ -1,0 +1,82 @@
+{
+  "10": {
+    "inputs": {
+      "ckpt_name": "film_net_fp32.pt",
+      "clear_cache_after_n_frames": 10,
+      "multiplier": 30,
+      "frames": [
+        "25",
+        0
+      ]
+    },
+    "class_type": "FILM VFI",
+    "_meta": {
+      "title": "FILM VFI"
+    }
+  },
+  "12": {
+    "inputs": {
+      "directory": "/storage/SSD_4T/yptsai/program/dataset/test_data/12_014_D",
+      "image_load_cap": 30,
+      "start_index": 0,
+      "load_always": true
+    },
+    "class_type": "LoadImagesFromDir //Inspire",
+    "_meta": {
+      "title": "Load Image Batch From Dir (Inspire)"
+    }
+  },
+  "13": {
+    "inputs": {
+      "frame_rate": 30,
+      "loop_count": 0,
+      "filename_prefix": "FrameInterpolation",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 20,
+      "save_metadata": true,
+      "pingpong": true,
+      "save_output": true,
+      "images": [
+        "10",
+        0
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "25": {
+    "inputs": {
+      "side_length": 1536,
+      "side": "Longest",
+      "upscale_method": "area",
+      "crop": "disabled",
+      "image": [
+        "12",
+        0
+      ]
+    },
+    "class_type": "Image scale to side",
+    "_meta": {
+      "title": "Image scale to side"
+    }
+  },
+  "27": {
+    "inputs": {
+      "video": "Deep Sea Gardens.mp4",
+      "force_rate": 0,
+      "force_size": "Disabled",
+      "custom_width": 512,
+      "custom_height": 512,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1
+    },
+    "class_type": "VHS_LoadVideo",
+    "_meta": {
+      "title": "Load Video (Upload) 🎥🅥🅗🅢"
+    }
+  }
+}

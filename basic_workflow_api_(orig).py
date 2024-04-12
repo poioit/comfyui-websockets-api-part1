@@ -1,7 +1,9 @@
 import json
 from urllib import request, parse
 import random
+import os
 
+test_folder = '/storage/SSD_4T/yptsai/program/dataset/test_data/'
 # ======================================================================
 # This function sends a prompt workflow to the specified URL 
 # (http://127.0.0.1:8188/prompt) and queues it on the ComfyUI server
@@ -15,7 +17,21 @@ def queue_prompt(prompt_workflow):
 
 # read workflow api data from file and convert it into dictionary 
 # assign to var prompt_workflow
-prompt_workflow = json.load(open('workflow_api.json'))
+prompt_workflow = json.load(open('/storage/SSD_4T/hankchen/comfyui-websockets-api-part1/workflow_api.json'))
+image_loader_node = prompt_workflow["401"]
+subfolders = [ f.path for f in os.scandir(test_folder) if f.is_dir()]
+cnt = 0
+for dir in enumerate(subfolders):
+    image_loader_node["inputs"]["directory"] = dir[1]
+    # run
+    queue_prompt(prompt_workflow)
+    cnt += 1
+    print(cnt)
+    print(dir)
+
+
+exit()
+
 
 # create a list of prompts
 prompt_list = []
