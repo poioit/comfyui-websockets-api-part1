@@ -1,0 +1,76 @@
+{
+  "12": {
+    "inputs": {
+      "directory": "/home/yptsai/program/ComfyUI/16_png/A",
+      "image_load_cap": 30,
+      "start_index": 0,
+      "load_always": true
+    },
+    "class_type": "LoadImagesFromDir //Inspire",
+    "_meta": {
+      "title": "Load Image Batch From Dir (Inspire)"
+    }
+  },
+  "25": {
+    "inputs": {
+      "side_length": 1536,
+      "side": "Longest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "12",
+        0
+      ]
+    },
+    "class_type": "Image scale to side",
+    "_meta": {
+      "title": "Image scale to side"
+    }
+  },
+  "27": {
+    "inputs": {
+      "video": "Deep Sea Gardens.mp4",
+      "force_rate": 0,
+      "force_size": "Disabled",
+      "custom_width": 512,
+      "custom_height": 512,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1
+    },
+    "class_type": "VHS_LoadVideo",
+    "_meta": {
+      "title": "Load Video (Upload) 🎥🅥🅗🅢"
+    }
+  },
+  "36": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "output_subdir": "test",
+      "file_type": "PNG",
+      "images": [
+        "37",
+        0
+      ]
+    },
+    "class_type": "YupaoNode",
+    "_meta": {
+      "title": "Yupao's Save Image"
+    }
+  },
+  "37": {
+    "inputs": {
+      "ckpt_name": "film_net_fp32.pt",
+      "clear_cache_after_n_frames": 10,
+      "multiplier": 2,
+      "frames": [
+        "25",
+        0
+      ]
+    },
+    "class_type": "FILM VFI",
+    "_meta": {
+      "title": "FILM VFI"
+    }
+  }
+}
