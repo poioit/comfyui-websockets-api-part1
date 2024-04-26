@@ -75,11 +75,68 @@
       "output_directory": [
         "16",
         4
+      ],
+      "files2": [
+        "33",
+        0
       ]
     },
     "class_type": "YupaoTaskSaveNode",
     "_meta": {
       "title": "Yupao's Task Save"
+    }
+  },
+  "32": {
+    "inputs": {
+      "ckpt_name": "GMFSS_fortuna_union",
+      "clear_cache_after_n_frames": 10,
+      "multiplier": 2,
+      "frames": [
+        "16",
+        0
+      ],
+      "frame_indices": [
+        "16",
+        3
+      ]
+    },
+    "class_type": "YupaoGMFSSNode",
+    "_meta": {
+      "title": "Yupao's GMFSS VFI"
+    }
+  },
+  "33": {
+    "inputs": {
+      "filename_prefix": "GMFSS",
+      "file_type": "PNG",
+      "images": [
+        "32",
+        0
+      ],
+      "indices": [
+        "32",
+        1
+      ],
+      "output_subdir": [
+        "16",
+        4
+      ]
+    },
+    "class_type": "YupaoSaveNode",
+    "_meta": {
+      "title": "Yupao's Save Image"
+    }
+  },
+  "34": {
+    "inputs": {
+      "images": [
+        "32",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
     }
   }
 }
