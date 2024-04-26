@@ -1,288 +1,37 @@
 {
-  "1": {
-    "inputs": {
-      "key": "test_input",
-      "folder": "heads",
-      "Queue": "queue"
-    },
-    "class_type": "FolderToImageStorage",
-    "_meta": {
-      "title": "FolderToImageStorage"
-    }
-  },
-  "2": {
-    "inputs": {
-      "key": "test_input",
-      "batch_size": 2,
-      "loop_idx": 1,
-      "Queue": 1,
-      "loop_preview": "Done 😎!"
-    },
-    "class_type": "ImageStorageExportLoop",
-    "_meta": {
-      "title": "ImageStorageExportLoop"
-    }
-  },
-  "3": {
-    "inputs": {
-      "key_list": "*",
-      "Queue": "queue"
-    },
-    "class_type": "ImageStorageReset",
-    "_meta": {
-      "title": "ImageStorageReset"
-    }
-  },
-  "4": {
-    "inputs": {
-      "ckpt_name": "GMFSS_fortuna_union",
-      "clear_cache_after_n_frames": 1,
-      "multiplier": 10,
-      "frames": [
-        "2",
-        0
-      ]
-    },
-    "class_type": "GMFSS Fortuna VFI",
-    "_meta": {
-      "title": "GMFSS Fortuna VFI"
-    }
-  },
-  "5": {
-    "inputs": {
-      "key": "test_interpolated",
-      "image": [
-        "4",
-        0
-      ]
-    },
-    "class_type": "ImageStorageImport",
-    "_meta": {
-      "title": "ImageStorageImport"
-    }
-  },
-  "7": {
-    "inputs": {
-      "key": "test_interpolated",
-      "batch_size": 1000,
-      "loop_idx": 1,
-      "Queue": 1,
-      "loop_preview": "Done 😎!"
-    },
-    "class_type": "ImageStorageExportLoop",
-    "_meta": {
-      "title": "ImageStorageExportLoop"
-    }
-  },
-  "8": {
-    "inputs": {
-      "images": [
-        "7",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
-  "9": {
-    "inputs": {
-      "key": "test_interpolated",
-      "batch_size": 1,
-      "loop_idx": 11,
-      "Queue": 11,
-      "loop_preview": "Done 😎!"
-    },
-    "class_type": "ImageStorageExportLoop",
-    "_meta": {
-      "title": "ImageStorageExportLoop"
-    }
-  },
-  "10": {
-    "inputs": {
-      "seed": 177013,
-      "steps": 20,
-      "cfg": 8,
-      "sampler_name": "euler",
-      "scheduler": "normal",
-      "denoise": 1,
-      "model": [
-        "11",
-        0
-      ],
-      "positive": [
-        "13",
-        0
-      ],
-      "negative": [
-        "15",
-        0
-      ],
-      "latent_image": [
-        "16",
-        0
-      ]
-    },
-    "class_type": "KSampler",
-    "_meta": {
-      "title": "KSampler"
-    }
-  },
-  "11": {
-    "inputs": {
-      "ckpt_name": "v1-5-pruned-emaonly.ckpt"
-    },
-    "class_type": "CheckpointLoaderSimple",
-    "_meta": {
-      "title": "Load Checkpoint"
-    }
-  },
-  "12": {
-    "inputs": {
-      "control_net_name": "control_v11p_sd15_canny_fp16.safetensors"
-    },
-    "class_type": "ControlNetLoader",
-    "_meta": {
-      "title": "Load ControlNet Model"
-    }
-  },
-  "13": {
-    "inputs": {
-      "strength": 1.87,
-      "conditioning": [
-        "14",
-        0
-      ],
-      "control_net": [
-        "12",
-        0
-      ],
-      "image": [
-        "9",
-        0
-      ]
-    },
-    "class_type": "ControlNetApply",
-    "_meta": {
-      "title": "Apply ControlNet"
-    }
-  },
-  "14": {
-    "inputs": {
-      "text": "masterpiece, best quality, 1girl, white hair, blue eyes",
-      "clip": [
-        "11",
-        1
-      ]
-    },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Prompt)"
-    }
-  },
-  "15": {
-    "inputs": {
-      "text": "(low quality, worst quality:1.4), (bad anatomy), (inaccurate limb:1.2), bad composition, inaccurate eyes, extra digit, fewer digits, (extra arms:1.2)",
-      "clip": [
-        "11",
-        1
-      ]
-    },
-    "class_type": "CLIPTextEncode",
-    "_meta": {
-      "title": "CLIP Text Encode (Prompt)"
-    }
-  },
   "16": {
     "inputs": {
-      "pixels": [
-        "9",
+      "input_directory": "/home/yptsai/program/ComfyUI/15_png/A",
+      "output_directory": "out/task1"
+    },
+    "class_type": "YupaoTaskLoadNode",
+    "_meta": {
+      "title": "Yupao's Task Laod"
+    }
+  },
+  "20": {
+    "inputs": {
+      "ckpt_name": "film_net_fp32.pt",
+      "clear_cache_after_n_frames": 300,
+      "multiplier": 2,
+      "frames": [
+        "16",
         0
       ],
-      "vae": [
-        "11",
-        2
+      "frame_indices": [
+        "16",
+        3
       ]
     },
-    "class_type": "VAEEncode",
+    "class_type": "YupaoFILMNode",
     "_meta": {
-      "title": "VAE Encode"
-    }
-  },
-  "17": {
-    "inputs": {
-      "samples": [
-        "10",
-        0
-      ],
-      "vae": [
-        "11",
-        2
-      ]
-    },
-    "class_type": "VAEDecode",
-    "_meta": {
-      "title": "VAE Decode"
-    }
-  },
-  "18": {
-    "inputs": {
-      "key": "test_result",
-      "image": [
-        "17",
-        0
-      ]
-    },
-    "class_type": "ImageStorageImport",
-    "_meta": {
-      "title": "ImageStorageImport"
-    }
-  },
-  "21": {
-    "inputs": {
-      "low_threshold": 0.4,
-      "high_threshold": 0.8,
-      "image": [
-        "9",
-        0
-      ]
-    },
-    "class_type": "Canny",
-    "_meta": {
-      "title": "Canny"
-    }
-  },
-  "22": {
-    "inputs": {
-      "key": "test_canny",
-      "image": [
-        "21",
-        0
-      ]
-    },
-    "class_type": "ImageStorageImport",
-    "_meta": {
-      "title": "ImageStorageImport"
+      "title": "Yupao's FILM VFI"
     }
   },
   "23": {
     "inputs": {
-      "key": "test_canny",
-      "batch_size": 1000,
-      "loop_idx": 0,
-      "Queue": 1,
-      "loop_preview": "\"test_canny\" not found. 🤔"
-    },
-    "class_type": "ImageStorageExportLoop",
-    "_meta": {
-      "title": "ImageStorageExportLoop"
-    }
-  },
-  "24": {
-    "inputs": {
       "images": [
-        "23",
+        "20",
         0
       ]
     },
@@ -291,29 +40,46 @@
       "title": "Preview Image"
     }
   },
-  "25": {
+  "27": {
     "inputs": {
-      "key": "test_result",
-      "batch_size": 1000,
-      "loop_idx": 0,
-      "Queue": 1,
-      "loop_preview": "\"test_result\" not found. 🤔"
-    },
-    "class_type": "ImageStorageExportLoop",
-    "_meta": {
-      "title": "ImageStorageExportLoop"
-    }
-  },
-  "26": {
-    "inputs": {
+      "filename_prefix": "FILM",
+      "file_type": "PNG",
       "images": [
-        "25",
+        "20",
         0
+      ],
+      "indices": [
+        "20",
+        1
+      ],
+      "output_subdir": [
+        "16",
+        4
       ]
     },
-    "class_type": "PreviewImage",
+    "class_type": "YupaoSaveNode",
     "_meta": {
-      "title": "Preview Image"
+      "title": "Yupao's Save Image"
+    }
+  },
+  "31": {
+    "inputs": {
+      "files1": [
+        "27",
+        0
+      ],
+      "frame_indices": [
+        "16",
+        3
+      ],
+      "output_directory": [
+        "16",
+        4
+      ]
+    },
+    "class_type": "YupaoTaskSaveNode",
+    "_meta": {
+      "title": "Yupao's Task Save"
     }
   }
 }
