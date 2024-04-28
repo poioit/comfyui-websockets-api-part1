@@ -1,25 +1,15 @@
 {
-  "16": {
-    "inputs": {
-      "input_directory": "/home/yptsai/program/ComfyUI/15_png/A",
-      "output_directory": "out/task1"
-    },
-    "class_type": "YupaoTaskLoadNode",
-    "_meta": {
-      "title": "Yupao's Task Laod"
-    }
-  },
   "20": {
     "inputs": {
       "ckpt_name": "film_net_fp32.pt",
       "clear_cache_after_n_frames": 300,
       "multiplier": 2,
       "frames": [
-        "16",
+        "36",
         0
       ],
       "frame_indices": [
-        "16",
+        "36",
         3
       ]
     },
@@ -53,7 +43,7 @@
         1
       ],
       "output_subdir": [
-        "16",
+        "36",
         4
       ]
     },
@@ -62,41 +52,17 @@
       "title": "Yupao's Save Image"
     }
   },
-  "31": {
-    "inputs": {
-      "files1": [
-        "27",
-        0
-      ],
-      "frame_indices": [
-        "16",
-        3
-      ],
-      "output_directory": [
-        "16",
-        4
-      ],
-      "files2": [
-        "33",
-        0
-      ]
-    },
-    "class_type": "YupaoTaskSaveNode",
-    "_meta": {
-      "title": "Yupao's Task Save"
-    }
-  },
   "32": {
     "inputs": {
       "ckpt_name": "GMFSS_fortuna_union",
       "clear_cache_after_n_frames": 10,
       "multiplier": 2,
       "frames": [
-        "16",
+        "36",
         0
       ],
       "frame_indices": [
-        "16",
+        "36",
         3
       ]
     },
@@ -118,7 +84,7 @@
         1
       ],
       "output_subdir": [
-        "16",
+        "36",
         4
       ]
     },
@@ -137,6 +103,40 @@
     "class_type": "PreviewImage",
     "_meta": {
       "title": "Preview Image"
+    }
+  },
+  "36": {
+    "inputs": {
+      "input_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/9a46edf3f1799a95d1ed4295e4a50bef/input",
+      "output_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/9a46edf3f1799a95d1ed4295e4a50bef/output"
+    },
+    "class_type": "YupaoTaskLoadNode",
+    "_meta": {
+      "title": "Yupao's Task Laod"
+    }
+  },
+  "37": {
+    "inputs": {
+      "files1": [
+        "27",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "output_directory": [
+        "36",
+        4
+      ],
+      "filename": [
+        "36",
+        5
+      ]
+    },
+    "class_type": "YupaoTaskSaveNode",
+    "_meta": {
+      "title": "Yupao's Task Save"
     }
   }
 }
