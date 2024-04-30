@@ -18,18 +18,6 @@
       "title": "Yupao's FILM VFI"
     }
   },
-  "23": {
-    "inputs": {
-      "images": [
-        "20",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
   "27": {
     "inputs": {
       "filename_prefix": "FILM",
@@ -54,7 +42,7 @@
   },
   "32": {
     "inputs": {
-      "ckpt_name": "GMFSS_fortuna_union",
+      "ckpt_name": "GMFSS_fortuna_union_ft_animerun",
       "clear_cache_after_n_frames": 10,
       "multiplier": 2,
       "frames": [
@@ -93,18 +81,6 @@
       "title": "Yupao's Save Image"
     }
   },
-  "34": {
-    "inputs": {
-      "images": [
-        "32",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
   "36": {
     "inputs": {
       "input_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/9a46edf3f1799a95d1ed4295e4a50bef/input",
@@ -132,11 +108,60 @@
       "filename": [
         "36",
         5
+      ],
+      "files2": [
+        "33",
+        0
+      ],
+      "files3": [
+        "42",
+        0
       ]
     },
     "class_type": "YupaoTaskSaveNode",
     "_meta": {
       "title": "Yupao's Task Save"
+    }
+  },
+  "41": {
+    "inputs": {
+      "ckpt_name": "practical_rife",
+      "clear_cache_after_n_frames": 10,
+      "multiplier": 2,
+      "frames": [
+        "36",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ]
+    },
+    "class_type": "YupaoPracticalRIFENode",
+    "_meta": {
+      "title": "Yupao's Practical RIFE VFI"
+    }
+  },
+  "42": {
+    "inputs": {
+      "filename_prefix": "Practical_RIFE",
+      "file_type": "PNG",
+      "images": [
+        "41",
+        0
+      ],
+      "indices": [
+        "41",
+        1
+      ],
+      "output_subdir": [
+        "36",
+        4
+      ]
+    },
+    "class_type": "YupaoSaveNode",
+    "_meta": {
+      "title": "Yupao's Save Image"
     }
   }
 }
