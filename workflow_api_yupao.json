@@ -84,7 +84,8 @@
   "36": {
     "inputs": {
       "input_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/9a46edf3f1799a95d1ed4295e4a50bef/input",
-      "output_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/9a46edf3f1799a95d1ed4295e4a50bef/output"
+      "output_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/9a46edf3f1799a95d1ed4295e4a50bef/output",
+      "load_always": true
     },
     "class_type": "YupaoTaskLoadNode",
     "_meta": {
