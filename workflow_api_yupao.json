@@ -4,13 +4,13 @@
       "ckpt_name": "film_net_fp32.pt",
       "clear_cache_after_n_frames": 300,
       "multiplier": 2,
-      "frames": [
-        "36",
-        0
-      ],
       "frame_indices": [
         "36",
         3
+      ],
+      "frames": [
+        "75",
+        2
       ]
     },
     "class_type": "YupaoFILMNode",
@@ -45,13 +45,13 @@
       "ckpt_name": "GMFSS_fortuna_union_ft_animerun",
       "clear_cache_after_n_frames": 10,
       "multiplier": 2,
-      "frames": [
-        "36",
-        0
-      ],
       "frame_indices": [
         "36",
         3
+      ],
+      "frames": [
+        "75",
+        0
       ]
     },
     "class_type": "YupaoGMFSSNode",
@@ -83,8 +83,8 @@
   },
   "36": {
     "inputs": {
-      "input_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/9a46edf3f1799a95d1ed4295e4a50bef/input",
-      "output_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/9a46edf3f1799a95d1ed4295e4a50bef/output",
+      "input_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/2516254c93f81e2e1703ec2698b2bf52/input",
+      "output_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/a96dfaa49cb86e93f1768a86e3384c5e/output",
       "load_always": true
     },
     "class_type": "YupaoTaskLoadNode",
@@ -94,8 +94,12 @@
   },
   "37": {
     "inputs": {
+      "m": [
+        "36",
+        6
+      ],
       "files1": [
-        "27",
+        "33",
         0
       ],
       "frame_indices": [
@@ -111,11 +115,11 @@
         5
       ],
       "files2": [
-        "33",
+        "42",
         0
       ],
       "files3": [
-        "42",
+        "27",
         0
       ]
     },
@@ -129,13 +133,13 @@
       "ckpt_name": "practical_rife",
       "clear_cache_after_n_frames": 10,
       "multiplier": 2,
-      "frames": [
-        "36",
-        0
-      ],
       "frame_indices": [
         "36",
         3
+      ],
+      "frames": [
+        "75",
+        1
       ]
     },
     "class_type": "YupaoPracticalRIFENode",
@@ -163,6 +167,24 @@
     "class_type": "YupaoSaveNode",
     "_meta": {
       "title": "Yupao's Save Image"
+    }
+  },
+  "75": {
+    "inputs": {
+      "string_input": [
+        "36",
+        6
+      ],
+      "load_always": true,
+      "string_methods": "G\nP\nF",
+      "input": [
+        "36",
+        0
+      ]
+    },
+    "class_type": "YupaoLogicMethodSelectionNode",
+    "_meta": {
+      "title": "Yupao's Logic - method selection"
     }
   }
 }
