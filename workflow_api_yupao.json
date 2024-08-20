@@ -83,9 +83,11 @@
   },
   "36": {
     "inputs": {
-      "input_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/2516254c93f81e2e1703ec2698b2bf52/input",
+      "input_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/36d5a8542051f02b5545dffa99e7bb12/input",
       "output_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/a96dfaa49cb86e93f1768a86e3384c5e/output",
-      "load_always": true
+      "method_selection": "",
+      "load_always": true,
+      "available_methods": "G\nP\nF\n"
     },
     "class_type": "YupaoTaskLoadNode",
     "_meta": {
@@ -176,7 +178,10 @@
         6
       ],
       "load_always": true,
-      "string_methods": "G\nP\nF",
+      "string_methods": [
+        "36",
+        7
+      ],
       "input": [
         "36",
         0
