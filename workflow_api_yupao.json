@@ -4,6 +4,14 @@
       "ckpt_name": "film_net_fp32.pt",
       "clear_cache_after_n_frames": 300,
       "multiplier": 2,
+      "status": [
+        "75",
+        4
+      ],
+      "error_message": [
+        "75",
+        5
+      ],
       "frame_indices": [
         "36",
         3
@@ -22,6 +30,14 @@
     "inputs": {
       "filename_prefix": "FILM",
       "file_type": "PNG",
+      "status": [
+        "20",
+        2
+      ],
+      "error_message": [
+        "20",
+        3
+      ],
       "images": [
         "20",
         0
@@ -45,6 +61,14 @@
       "ckpt_name": "GMFSS_fortuna_union_ft_animerun",
       "clear_cache_after_n_frames": 10,
       "multiplier": 2,
+      "status": [
+        "75",
+        4
+      ],
+      "error_message": [
+        "75",
+        5
+      ],
       "frame_indices": [
         "36",
         3
@@ -63,6 +87,14 @@
     "inputs": {
       "filename_prefix": "GMFSS",
       "file_type": "PNG",
+      "status": [
+        "32",
+        2
+      ],
+      "error_message": [
+        "32",
+        3
+      ],
       "images": [
         "32",
         0
@@ -83,8 +115,8 @@
   },
   "36": {
     "inputs": {
-      "input_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/36d5a8542051f02b5545dffa99e7bb12/input",
-      "output_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/a96dfaa49cb86e93f1768a86e3384c5e/output",
+      "input_directory": "/home/yptsai/program/ComfyUI/15_png/A1",
+      "output_directory": "/home/yptsai/program/ComfyUI/output/aaa",
       "method_selection": "",
       "load_always": true,
       "available_methods": "G\nP\nF\n"
@@ -96,12 +128,20 @@
   },
   "37": {
     "inputs": {
+      "status": [
+        "79",
+        0
+      ],
+      "error_message": [
+        "82",
+        0
+      ],
       "m": [
         "36",
         6
       ],
       "files1": [
-        "33",
+        "83",
         0
       ],
       "frame_indices": [
@@ -115,14 +155,6 @@
       "filename": [
         "36",
         5
-      ],
-      "files2": [
-        "42",
-        0
-      ],
-      "files3": [
-        "27",
-        0
       ]
     },
     "class_type": "YupaoTaskSaveNode",
@@ -135,6 +167,14 @@
       "ckpt_name": "practical_rife",
       "clear_cache_after_n_frames": 10,
       "multiplier": 2,
+      "status": [
+        "75",
+        4
+      ],
+      "error_message": [
+        "75",
+        5
+      ],
       "frame_indices": [
         "36",
         3
@@ -153,6 +193,14 @@
     "inputs": {
       "filename_prefix": "Practical_RIFE",
       "file_type": "PNG",
+      "status": [
+        "41",
+        2
+      ],
+      "error_message": [
+        "41",
+        3
+      ],
       "images": [
         "41",
         0
@@ -177,7 +225,15 @@
         "36",
         6
       ],
-      "load_always": true,
+      "status": [
+        "36",
+        8
+      ],
+      "error_message": [
+        "36",
+        9
+      ],
+      "load_always": "G\nP\nF\n",
       "string_methods": [
         "36",
         7
@@ -190,6 +246,81 @@
     "class_type": "YupaoLogicMethodSelectionNode",
     "_meta": {
       "title": "Yupao's Logic - method selection"
+    }
+  },
+  "79": {
+    "inputs": {
+      "select": [
+        "75",
+        3
+      ],
+      "sel_mode": true,
+      "input1": [
+        "33",
+        1
+      ],
+      "input2": [
+        "42",
+        1
+      ],
+      "input3": [
+        "27",
+        1
+      ]
+    },
+    "class_type": "ImpactSwitch",
+    "_meta": {
+      "title": "Switch (Any)"
+    }
+  },
+  "82": {
+    "inputs": {
+      "select": [
+        "75",
+        3
+      ],
+      "sel_mode": true,
+      "input1": [
+        "33",
+        2
+      ],
+      "input2": [
+        "42",
+        2
+      ],
+      "input3": [
+        "27",
+        2
+      ]
+    },
+    "class_type": "ImpactSwitch",
+    "_meta": {
+      "title": "Switch (Any)"
+    }
+  },
+  "83": {
+    "inputs": {
+      "select": [
+        "75",
+        3
+      ],
+      "sel_mode": true,
+      "input1": [
+        "33",
+        0
+      ],
+      "input2": [
+        "42",
+        0
+      ],
+      "input3": [
+        "27",
+        0
+      ]
+    },
+    "class_type": "ImpactSwitch",
+    "_meta": {
+      "title": "Switch (Any)"
     }
   }
 }
