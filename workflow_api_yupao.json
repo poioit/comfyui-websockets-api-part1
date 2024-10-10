@@ -4,20 +4,14 @@
       "ckpt_name": "film_net_fp32.pt",
       "clear_cache_after_n_frames": 300,
       "multiplier": 2,
-      "status": [
-        "75",
-        4
-      ],
-      "error_message": [
-        "75",
-        5
-      ],
+      "status": true,
+      "error_message": "",
       "frame_indices": [
         "36",
         3
       ],
       "frames": [
-        "75",
+        "90",
         2
       ]
     },
@@ -30,14 +24,8 @@
     "inputs": {
       "filename_prefix": "FILM",
       "file_type": "PNG",
-      "status": [
-        "20",
-        2
-      ],
-      "error_message": [
-        "20",
-        3
-      ],
+      "status": true,
+      "error_message": "",
       "images": [
         "20",
         0
@@ -61,20 +49,14 @@
       "ckpt_name": "GMFSS_fortuna_union_ft_animerun",
       "clear_cache_after_n_frames": 10,
       "multiplier": 2,
-      "status": [
-        "75",
-        4
-      ],
-      "error_message": [
-        "75",
-        5
-      ],
+      "status": true,
+      "error_message": "",
       "frame_indices": [
         "36",
         3
       ],
       "frames": [
-        "75",
+        "90",
         0
       ]
     },
@@ -87,14 +69,8 @@
     "inputs": {
       "filename_prefix": "GMFSS",
       "file_type": "PNG",
-      "status": [
-        "32",
-        2
-      ],
-      "error_message": [
-        "32",
-        3
-      ],
+      "status": true,
+      "error_message": "",
       "images": [
         "32",
         0
@@ -115,11 +91,11 @@
   },
   "36": {
     "inputs": {
-      "input_directory": "/home/yptsai/program/ComfyUI/15_png/A1",
-      "output_directory": "/home/yptsai/program/ComfyUI/output/aaa",
+      "input_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/d9f0b8968d2244afb0feb73e93f33976/input",
+      "output_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/d9f0b8968d2244afb0feb73e93f33976/output",
       "method_selection": "",
       "load_always": true,
-      "available_methods": "G\nP\nF\n"
+      "available_methods": "G\nP\nF\nT"
     },
     "class_type": "YupaoTaskLoadNode",
     "_meta": {
@@ -128,20 +104,14 @@
   },
   "37": {
     "inputs": {
-      "status": [
-        "79",
-        0
-      ],
-      "error_message": [
-        "82",
-        0
-      ],
+      "status": true,
+      "error_message": "",
       "m": [
         "36",
         6
       ],
       "files1": [
-        "83",
+        "33",
         0
       ],
       "frame_indices": [
@@ -155,6 +125,14 @@
       "filename": [
         "36",
         5
+      ],
+      "files2": [
+        "42",
+        0
+      ],
+      "files3": [
+        "27",
+        0
       ]
     },
     "class_type": "YupaoTaskSaveNode",
@@ -167,20 +145,14 @@
       "ckpt_name": "practical_rife",
       "clear_cache_after_n_frames": 10,
       "multiplier": 2,
-      "status": [
-        "75",
-        4
-      ],
-      "error_message": [
-        "75",
-        5
-      ],
+      "status": true,
+      "error_message": "",
       "frame_indices": [
         "36",
         3
       ],
       "frames": [
-        "75",
+        "90",
         1
       ]
     },
@@ -193,14 +165,8 @@
     "inputs": {
       "filename_prefix": "Practical_RIFE",
       "file_type": "PNG",
-      "status": [
-        "41",
-        2
-      ],
-      "error_message": [
-        "41",
-        3
-      ],
+      "status": true,
+      "error_message": "",
       "images": [
         "41",
         0
@@ -219,21 +185,29 @@
       "title": "Yupao's Save Image"
     }
   },
-  "75": {
+  "89": {
+    "inputs": {
+      "status": true,
+      "error_message": "",
+      "image": [
+        "90",
+        3
+      ]
+    },
+    "class_type": "GetImageSizeAndCount",
+    "_meta": {
+      "title": "Get Image Size & Count"
+    }
+  },
+  "90": {
     "inputs": {
       "string_input": [
         "36",
         6
       ],
-      "status": [
-        "36",
-        8
-      ],
-      "error_message": [
-        "36",
-        9
-      ],
-      "load_always": "G\nP\nF\n",
+      "status": true,
+      "error_message": "",
+      "load_always": true,
       "string_methods": [
         "36",
         7
@@ -248,79 +222,213 @@
       "title": "Yupao's Logic - method selection"
     }
   },
-  "79": {
+  "91": {
     "inputs": {
-      "select": [
-        "75",
+      "steps": 20,
+      "cfg": 7,
+      "eta": 1,
+      "frames": 16,
+      "seed": 243931925609321,
+      "fs": 10,
+      "vae_dtype": "auto",
+      "image_embed_ratio": 1,
+      "augmentation_level": 0,
+      "ddpm_from": 1000,
+      "model": [
+        "103",
+        0
+      ],
+      "clip_vision": [
+        "93",
+        0
+      ],
+      "positive": [
+        "94",
+        0
+      ],
+      "negative": [
+        "98",
+        0
+      ],
+      "images": [
+        "89",
+        0
+      ],
+      "frame_indices": [
+        "36",
         3
-      ],
-      "sel_mode": true,
-      "input1": [
-        "33",
-        1
-      ],
-      "input2": [
-        "42",
-        1
-      ],
-      "input3": [
-        "27",
-        1
       ]
     },
-    "class_type": "ImpactSwitch",
+    "class_type": "ToonCrafterInterpolation",
     "_meta": {
-      "title": "Switch (Any)"
+      "title": "ToonCrafter Interpolation"
     }
   },
-  "82": {
+  "93": {
     "inputs": {
-      "select": [
-        "75",
-        3
-      ],
-      "sel_mode": true,
-      "input1": [
-        "33",
-        2
-      ],
-      "input2": [
-        "42",
-        2
-      ],
-      "input3": [
-        "27",
-        2
-      ]
+      "model": "CLIP-ViT-H-fp16.safetensors"
     },
-    "class_type": "ImpactSwitch",
+    "class_type": "DownloadAndLoadCLIPVisionModel",
     "_meta": {
-      "title": "Switch (Any)"
+      "title": "(Down)Load CLIPVisionModel"
     }
   },
-  "83": {
+  "94": {
     "inputs": {
-      "select": [
-        "75",
-        3
-      ],
-      "sel_mode": true,
-      "input1": [
-        "33",
-        0
-      ],
-      "input2": [
-        "42",
-        0
-      ],
-      "input3": [
-        "27",
+      "text": "cartoon scene",
+      "clip": [
+        "95",
         0
       ]
     },
-    "class_type": "ImpactSwitch",
+    "class_type": "CLIPTextEncode",
     "_meta": {
-      "title": "Switch (Any)"
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "95": {
+    "inputs": {
+      "model": "stable-diffusion-2-1-clip-fp16.safetensors"
+    },
+    "class_type": "DownloadAndLoadCLIPModel",
+    "_meta": {
+      "title": "(Down)Load CLIPModel"
+    }
+  },
+  "98": {
+    "inputs": {
+      "text": "talking, deformed hands, bad anatomy",
+      "clip": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "102": {
+    "inputs": {
+      "vae_dtype": "auto",
+      "prune_last_frame": false,
+      "model": [
+        "103",
+        0
+      ],
+      "latent": [
+        "91",
+        0
+      ]
+    },
+    "class_type": "ToonCrafterDecode",
+    "_meta": {
+      "title": "ToonCrafter Decode"
+    }
+  },
+  "103": {
+    "inputs": {
+      "model": "tooncrafter_512_interp-pruned-fp16.safetensors",
+      "dtype": "fp16",
+      "fp8_unet": false
+    },
+    "class_type": "DownloadAndLoadDynamiCrafterModel",
+    "_meta": {
+      "title": "(Down)Load DynamiCrafterModel"
+    }
+  },
+  "104": {
+    "inputs": {
+      "ckpt_name": "4x_APISR_GRL_GAN_generator.pth",
+      "per_batch": 8,
+      "dtype": "fp32",
+      "images": [
+        "102",
+        0
+      ],
+      "ratio": [
+        "89",
+        4
+      ]
+    },
+    "class_type": "APISR_upscale",
+    "_meta": {
+      "title": "APISR Upscale"
+    }
+  },
+  "105": {
+    "inputs": {
+      "filename_prefix": "Tooncrafter",
+      "file_type": "PNG",
+      "status": true,
+      "error_message": "",
+      "images": [
+        "104",
+        0
+      ],
+      "indices": [
+        "91",
+        1
+      ],
+      "output_subdir": [
+        "36",
+        4
+      ]
+    },
+    "class_type": "YupaoSaveNode",
+    "_meta": {
+      "title": "Yupao's Save Image"
+    }
+  },
+  "106": {
+    "inputs": {
+      "frame_rate": 8,
+      "loop_count": 0,
+      "filename_prefix": "AnimateDiff",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "pingpong": false,
+      "save_output": true,
+      "images": [
+        "104",
+        0
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "110": {
+    "inputs": {
+      "status": true,
+      "error_message": "",
+      "m": [
+        "36",
+        6
+      ],
+      "files1": [
+        "105",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "output_directory": [
+        "36",
+        4
+      ],
+      "filename": [
+        "36",
+        5
+      ]
+    },
+    "class_type": "YupaoTaskSaveNode",
+    "_meta": {
+      "title": "Yupao's Task Save"
     }
   }
 }
