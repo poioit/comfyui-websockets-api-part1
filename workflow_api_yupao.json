@@ -1,1778 +1,436 @@
 {
-  "last_node_id": 110,
-  "last_link_id": 101,
-  "nodes": [
-    {
-      "id": 33,
-      "type": "YupaoSaveNode",
-      "pos": {
-        "0": 1671.7999267578125,
-        "1": 130
-      },
-      "size": {
-        "0": 315,
-        "1": 170
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 33
-        },
-        {
-          "name": "indices",
-          "type": "INDICES",
-          "link": 34
-        },
-        {
-          "name": "output_subdir",
-          "type": "DIR",
-          "link": 35
-        }
+  "20": {
+    "inputs": {
+      "ckpt_name": "film_net_fp32.pt",
+      "clear_cache_after_n_frames": 300,
+      "multiplier": 2,
+      "status": true,
+      "error_message": "",
+      "frame_indices": [
+        "36",
+        3
       ],
-      "outputs": [
-        {
-          "name": "FILES",
-          "type": "FILES",
-          "links": [
-            37
-          ],
-          "shape": 3
-        },
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "YupaoSaveNode"
-      },
-      "widgets_values": [
-        "GMFSS",
-        "PNG",
-        true,
-        ""
+      "frames": [
+        "90",
+        2
       ]
     },
-    {
-      "id": 42,
-      "type": "YupaoSaveNode",
-      "pos": {
-        "0": 1671.7999267578125,
-        "1": 430
-      },
-      "size": {
-        "0": 315,
-        "1": 170
-      },
-      "flags": {},
-      "order": 13,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 45
-        },
-        {
-          "name": "indices",
-          "type": "INDICES",
-          "link": 46
-        },
-        {
-          "name": "output_subdir",
-          "type": "DIR",
-          "link": 47
-        }
-      ],
-      "outputs": [
-        {
-          "name": "FILES",
-          "type": "FILES",
-          "links": [
-            41
-          ],
-          "shape": 3
-        },
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "YupaoSaveNode"
-      },
-      "widgets_values": [
-        "Practical_RIFE",
-        "PNG",
-        true,
-        ""
-      ]
-    },
-    {
-      "id": 41,
-      "type": "YupaoPracticalRIFENode",
-      "pos": {
-        "0": 1144,
-        "1": 423
-      },
-      "size": {
-        "0": 468.5999755859375,
-        "1": 214
-      },
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "frame_indices",
-          "type": "LIST",
-          "link": 43
-        },
-        {
-          "name": "frames",
-          "type": "IMAGE",
-          "link": 64
-        },
-        {
-          "name": "optional_interpolation_states",
-          "type": "INTERPOLATION_STATES",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            45
-          ],
-          "shape": 3
-        },
-        {
-          "name": "INDICES",
-          "type": "INDICES",
-          "links": [
-            46
-          ],
-          "shape": 3
-        },
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "YupaoPracticalRIFENode"
-      },
-      "widgets_values": [
-        "practical_rife",
-        10,
-        2,
-        true,
-        ""
-      ]
-    },
-    {
-      "id": 20,
-      "type": "YupaoFILMNode",
-      "pos": {
-        "0": 542,
-        "1": 312
-      },
-      "size": {
-        "0": 468.5999755859375,
-        "1": 214
-      },
-      "flags": {},
-      "order": 10,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "frame_indices",
-          "type": "LIST",
-          "link": 26
-        },
-        {
-          "name": "frames",
-          "type": "IMAGE",
-          "link": 65
-        },
-        {
-          "name": "optional_interpolation_states",
-          "type": "INTERPOLATION_STATES",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            28
-          ],
-          "shape": 3
-        },
-        {
-          "name": "INDICES",
-          "type": "INDICES",
-          "links": [
-            29
-          ],
-          "shape": 3
-        },
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "YupaoFILMNode"
-      },
-      "widgets_values": [
-        "film_net_fp32.pt",
-        300,
-        2,
-        true,
-        ""
-      ]
-    },
-    {
-      "id": 94,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 1248,
-        "1": -1001
-      },
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 81
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            76
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "cartoon scene"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
-      "id": 95,
-      "type": "DownloadAndLoadCLIPModel",
-      "pos": {
-        "0": 649,
-        "1": -850
-      },
-      "size": {
-        "0": 384.8832702636719,
-        "1": 102.63188934326172
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "links": [
-            80
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DownloadAndLoadCLIPModel"
-      },
-      "widgets_values": [
-        "stable-diffusion-2-1-clip-fp16.safetensors"
-      ]
-    },
-    {
-      "id": 101,
-      "type": "Reroute",
-      "pos": {
-        "0": 1131,
-        "1": -734
-      },
-      "size": [
-        75,
-        26
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 80
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            81,
-            82
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "showOutputText": true,
-        "horizontal": false
-      }
-    },
-    {
-      "id": 90,
-      "type": "YupaoLogicMethodSelectionNode",
-      "pos": {
-        "0": 361,
-        "1": -461
-      },
-      "size": {
-        "0": 403.1999816894531,
-        "1": 292
-      },
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "input",
-          "type": "*",
-          "link": 66
-        },
-        {
-          "name": "string_input",
-          "type": "STRING",
-          "link": 67,
-          "widget": {
-            "name": "string_input"
-          }
-        },
-        {
-          "name": "string_methods",
-          "type": "STRING",
-          "link": 68,
-          "widget": {
-            "name": "string_methods"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "*",
-          "links": [
-            63
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "images",
-          "type": "*",
-          "links": [
-            64
-          ],
-          "slot_index": 1,
-          "shape": 3
-        },
-        {
-          "name": "images",
-          "type": "*",
-          "links": [
-            65
-          ],
-          "slot_index": 2,
-          "shape": 3
-        },
-        {
-          "name": "images",
-          "type": "*",
-          "links": [
-            62
-          ],
-          "slot_index": 3,
-          "shape": 3
-        },
-        {
-          "name": "method",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "status",
-          "type": "BOOLEAN",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "error_message",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "YupaoLogicMethodSelectionNode"
-      },
-      "widgets_values": [
-        "",
-        true,
-        "",
-        true,
-        "G\nP\nF\n"
-      ]
-    },
-    {
-      "id": 98,
-      "type": "CLIPTextEncode",
-      "pos": {
-        "0": 1350,
-        "1": -807
-      },
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 82
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            77
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "talking, deformed hands, bad anatomy"
-      ],
-      "color": "#332922",
-      "bgcolor": "#593930"
-    },
-    {
-      "id": 103,
-      "type": "DownloadAndLoadDynamiCrafterModel",
-      "pos": {
-        "0": 1762,
-        "1": -732
-      },
-      "size": {
-        "0": 365.4000244140625,
-        "1": 106
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "DynCraft_model",
-          "type": "DCMODEL",
-          "links": [
-            84,
-            86
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DownloadAndLoadDynamiCrafterModel"
-      },
-      "widgets_values": [
-        "tooncrafter_512_interp-pruned-fp16.safetensors",
-        "fp16",
-        false
-      ]
-    },
-    {
-      "id": 32,
-      "type": "YupaoGMFSSNode",
-      "pos": {
-        "0": 1043,
-        "1": 13
-      },
-      "size": {
-        "0": 468.5999755859375,
-        "1": 214
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "frame_indices",
-          "type": "LIST",
-          "link": 31
-        },
-        {
-          "name": "frames",
-          "type": "IMAGE",
-          "link": 63
-        },
-        {
-          "name": "optional_interpolation_states",
-          "type": "INTERPOLATION_STATES",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            33
-          ],
-          "shape": 3
-        },
-        {
-          "name": "INDICES",
-          "type": "INDICES",
-          "links": [
-            34
-          ],
-          "shape": 3
-        },
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "YupaoGMFSSNode"
-      },
-      "widgets_values": [
-        "GMFSS_fortuna_union_ft_animerun",
-        10,
-        2,
-        true,
-        ""
-      ]
-    },
-    {
-      "id": 27,
-      "type": "YupaoSaveNode",
-      "pos": {
-        "0": 1650,
-        "1": 718
-      },
-      "size": {
-        "0": 315,
-        "1": 170
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 28
-        },
-        {
-          "name": "indices",
-          "type": "INDICES",
-          "link": 29
-        },
-        {
-          "name": "output_subdir",
-          "type": "DIR",
-          "link": 30
-        }
-      ],
-      "outputs": [
-        {
-          "name": "FILES",
-          "type": "FILES",
-          "links": [
-            42
-          ],
-          "shape": 3
-        },
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "YupaoSaveNode"
-      },
-      "widgets_values": [
-        "FILM",
-        "PNG",
-        true,
-        ""
-      ]
-    },
-    {
-      "id": 37,
-      "type": "YupaoTaskSaveNode",
-      "pos": {
-        "0": 2240,
-        "1": 280
-      },
-      "size": {
-        "0": 315,
-        "1": 226
-      },
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "files1",
-          "type": "FILES",
-          "link": 37
-        },
-        {
-          "name": "frame_indices",
-          "type": "LIST",
-          "link": 38
-        },
-        {
-          "name": "output_directory",
-          "type": "DIR",
-          "link": 39
-        },
-        {
-          "name": "filename",
-          "type": "FILENAME",
-          "link": 40
-        },
-        {
-          "name": "files2",
-          "type": "FILES",
-          "link": 41
-        },
-        {
-          "name": "files3",
-          "type": "FILES",
-          "link": 42
-        },
-        {
-          "name": "files4",
-          "type": "FILES",
-          "link": null
-        },
-        {
-          "name": "m",
-          "type": "STRING",
-          "link": 36,
-          "widget": {
-            "name": "m"
-          }
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "YupaoTaskSaveNode"
-      },
-      "widgets_values": [
-        true,
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 89,
-      "type": "GetImageSizeAndCount",
-      "pos": {
-        "0": 832,
-        "1": -443
-      },
-      "size": {
-        "0": 277.20001220703125,
-        "1": 162
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 62
-        }
-      ],
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            101
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "448 width",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "256 height",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "3 count",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "4 ratio",
-          "type": "RATIO",
-          "links": [
-            93
-          ],
-          "slot_index": 4,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "GetImageSizeAndCount"
-      },
-      "widgets_values": [
-        true,
-        ""
-      ]
-    },
-    {
-      "id": 106,
-      "type": "VHS_VideoCombine",
-      "pos": {
-        "0": 2869,
-        "1": -372
-      },
-      "size": [
-        219.3603515625,
-        437.9202008928571
-      ],
-      "flags": {},
-      "order": 20,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 92
-        },
-        {
-          "name": "audio",
-          "type": "AUDIO",
-          "link": null
-        },
-        {
-          "name": "meta_batch",
-          "type": "VHS_BatchManager",
-          "link": null
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "Filenames",
-          "type": "VHS_FILENAMES",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VHS_VideoCombine"
-      },
-      "widgets_values": {
-        "frame_rate": 8,
-        "loop_count": 0,
-        "filename_prefix": "AnimateDiff",
-        "format": "video/h264-mp4",
-        "pix_fmt": "yuv420p",
-        "crf": 19,
-        "save_metadata": true,
-        "pingpong": false,
-        "save_output": true,
-        "videopreview": {
-          "hidden": false,
-          "paused": false,
-          "params": {
-            "filename": "AnimateDiff_00083.mp4",
-            "subfolder": "",
-            "type": "output",
-            "format": "video/h264-mp4",
-            "frame_rate": 8
-          },
-          "muted": false
-        }
-      }
-    },
-    {
-      "id": 110,
-      "type": "YupaoTaskSaveNode",
-      "pos": {
-        "0": 2778,
-        "1": -657
-      },
-      "size": {
-        "0": 315,
-        "1": 226
-      },
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "files1",
-          "type": "FILES",
-          "link": 96
-        },
-        {
-          "name": "frame_indices",
-          "type": "LIST",
-          "link": 100
-        },
-        {
-          "name": "output_directory",
-          "type": "DIR",
-          "link": 98
-        },
-        {
-          "name": "filename",
-          "type": "FILENAME",
-          "link": 99
-        },
-        {
-          "name": "files2",
-          "type": "FILES",
-          "link": null
-        },
-        {
-          "name": "files3",
-          "type": "FILES",
-          "link": null
-        },
-        {
-          "name": "files4",
-          "type": "FILES",
-          "link": null
-        },
-        {
-          "name": "m",
-          "type": "STRING",
-          "link": 97,
-          "widget": {
-            "name": "m"
-          }
-        }
-      ],
-      "outputs": [],
-      "properties": {
-        "Node name for S&R": "YupaoTaskSaveNode"
-      },
-      "widgets_values": [
-        true,
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 105,
-      "type": "YupaoSaveNode",
-      "pos": {
-        "0": 2407,
-        "1": -554
-      },
-      "size": {
-        "0": 315,
-        "1": 170
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 88
-        },
-        {
-          "name": "indices",
-          "type": "INDICES",
-          "link": 89
-        },
-        {
-          "name": "output_subdir",
-          "type": "DIR",
-          "link": 90
-        }
-      ],
-      "outputs": [
-        {
-          "name": "FILES",
-          "type": "FILES",
-          "links": [
-            96
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "BOOLEAN",
-          "type": "BOOLEAN",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "YupaoSaveNode"
-      },
-      "widgets_values": [
-        "Tooncrafter",
-        "PNG",
-        true,
-        ""
-      ]
-    },
-    {
-      "id": 91,
-      "type": "ToonCrafterInterpolation",
-      "pos": {
-        "0": 1354,
-        "1": -500
-      },
-      "size": {
-        "0": 393,
-        "1": 438
-      },
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "DCMODEL",
-          "link": 86
-        },
-        {
-          "name": "clip_vision",
-          "type": "CLIP_VISION",
-          "link": 70
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 76
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 77
-        },
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 101
-        },
-        {
-          "name": "optional_latents",
-          "type": "LATENT",
-          "link": null
-        },
-        {
-          "name": "frame_indices",
-          "type": "LIST",
-          "link": 78
-        },
-        {
-          "name": "controlnet",
-          "type": "DC_CONTROL",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "links": [
-            85
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "output_indices",
-          "type": "INDICES",
-          "links": [
-            89
-          ],
-          "slot_index": 1,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ToonCrafterInterpolation"
-      },
-      "widgets_values": [
-        20,
-        7,
-        1,
-        16,
-        643368607832073,
-        "randomize",
-        10,
-        "auto",
-        1,
-        0,
-        1000
-      ]
-    },
-    {
-      "id": 102,
-      "type": "ToonCrafterDecode",
-      "pos": {
-        "0": 1832,
-        "1": -494
-      },
-      "size": {
-        "0": 315,
-        "1": 102
-      },
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "DCMODEL",
-          "link": 84
-        },
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "link": 85
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "links": [
-            87
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ToonCrafterDecode"
-      },
-      "widgets_values": [
-        "auto",
-        false
-      ]
-    },
-    {
-      "id": 93,
-      "type": "DownloadAndLoadCLIPVisionModel",
-      "pos": {
-        "0": 910,
-        "1": -606
-      },
-      "size": {
-        "0": 327.5999755859375,
-        "1": 58
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "clip_vision",
-          "type": "CLIP_VISION",
-          "links": [
-            70
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "DownloadAndLoadCLIPVisionModel"
-      },
-      "widgets_values": [
-        "CLIP-ViT-H-fp16.safetensors"
-      ]
-    },
-    {
-      "id": 104,
-      "type": "APISR_upscale",
-      "pos": {
-        "0": 2153,
-        "1": -336
-      },
-      "size": {
-        "0": 315,
-        "1": 126
-      },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 87
-        },
-        {
-          "name": "ratio",
-          "type": "RATIO",
-          "link": 93
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "links": [
-            88,
-            92
-          ],
-          "slot_index": 0,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "APISR_upscale"
-      },
-      "widgets_values": [
-        "4x_APISR_GRL_GAN_generator.pth",
-        8,
-        "fp32"
-      ]
-    },
-    {
-      "id": 36,
-      "type": "YupaoTaskLoadNode",
-      "pos": {
-        "0": -75,
-        "1": -116
-      },
-      "size": {
-        "0": 400,
-        "1": 352
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGES",
-          "type": "IMAGE",
-          "links": [
-            66
-          ],
-          "slot_index": 0,
-          "shape": 3
-        },
-        {
-          "name": "MASKS",
-          "type": "IMAGE",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "length",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "frame_indices",
-          "type": "LIST",
-          "links": [
-            26,
-            31,
-            38,
-            43,
-            78,
-            100
-          ],
-          "slot_index": 3,
-          "shape": 3
-        },
-        {
-          "name": "output_dir",
-          "type": "DIR",
-          "links": [
-            30,
-            35,
-            39,
-            47,
-            90,
-            98
-          ],
-          "slot_index": 4,
-          "shape": 3
-        },
-        {
-          "name": "output_json_filename",
-          "type": "FILENAME",
-          "links": [
-            40,
-            99
-          ],
-          "slot_index": 5,
-          "shape": 3
-        },
-        {
-          "name": "method",
-          "type": "STRING",
-          "links": [
-            36,
-            67,
-            97
-          ],
-          "slot_index": 6,
-          "shape": 3
-        },
-        {
-          "name": "available_methods",
-          "type": "STRING",
-          "links": [
-            68
-          ],
-          "slot_index": 7,
-          "shape": 3
-        },
-        {
-          "name": "status",
-          "type": "BOOLEAN",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "error_message",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "YupaoTaskLoadNode"
-      },
-      "widgets_values": [
-        "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/d9f0b8968d2244afb0feb73e93f33976/input",
-        "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/d9f0b8968d2244afb0feb73e93f33976/output",
-        "",
-        true,
-        "G\nP\nF\nT"
-      ]
-    }
-  ],
-  "links": [
-    [
-      26,
-      36,
-      3,
-      20,
-      0,
-      "LIST"
-    ],
-    [
-      28,
-      20,
-      0,
-      27,
-      0,
-      "IMAGE"
-    ],
-    [
-      29,
-      20,
-      1,
-      27,
-      1,
-      "INDICES"
-    ],
-    [
-      30,
-      36,
-      4,
-      27,
-      2,
-      "DIR"
-    ],
-    [
-      31,
-      36,
-      3,
-      32,
-      0,
-      "LIST"
-    ],
-    [
-      33,
-      32,
-      0,
-      33,
-      0,
-      "IMAGE"
-    ],
-    [
-      34,
-      32,
-      1,
-      33,
-      1,
-      "INDICES"
-    ],
-    [
-      35,
-      36,
-      4,
-      33,
-      2,
-      "DIR"
-    ],
-    [
-      36,
-      36,
-      6,
-      37,
-      7,
-      "STRING"
-    ],
-    [
-      37,
-      33,
-      0,
-      37,
-      0,
-      "FILES"
-    ],
-    [
-      38,
-      36,
-      3,
-      37,
-      1,
-      "LIST"
-    ],
-    [
-      39,
-      36,
-      4,
-      37,
-      2,
-      "DIR"
-    ],
-    [
-      40,
-      36,
-      5,
-      37,
-      3,
-      "FILENAME"
-    ],
-    [
-      41,
-      42,
-      0,
-      37,
-      4,
-      "FILES"
-    ],
-    [
-      42,
-      27,
-      0,
-      37,
-      5,
-      "FILES"
-    ],
-    [
-      43,
-      36,
-      3,
-      41,
-      0,
-      "LIST"
-    ],
-    [
-      45,
-      41,
-      0,
-      42,
-      0,
-      "IMAGE"
-    ],
-    [
-      46,
-      41,
-      1,
-      42,
-      1,
-      "INDICES"
-    ],
-    [
-      47,
-      36,
-      4,
-      42,
-      2,
-      "DIR"
-    ],
-    [
-      62,
-      90,
-      3,
-      89,
-      0,
-      "IMAGE"
-    ],
-    [
-      63,
-      90,
-      0,
-      32,
-      1,
-      "IMAGE"
-    ],
-    [
-      64,
-      90,
-      1,
-      41,
-      1,
-      "IMAGE"
-    ],
-    [
-      65,
-      90,
-      2,
-      20,
-      1,
-      "IMAGE"
-    ],
-    [
-      66,
-      36,
-      0,
-      90,
-      0,
-      "*"
-    ],
-    [
-      67,
-      36,
-      6,
-      90,
-      1,
-      "STRING"
-    ],
-    [
-      68,
-      36,
-      7,
-      90,
-      2,
-      "STRING"
-    ],
-    [
-      70,
-      93,
-      0,
-      91,
-      1,
-      "CLIP_VISION"
-    ],
-    [
-      76,
-      94,
-      0,
-      91,
-      2,
-      "CONDITIONING"
-    ],
-    [
-      77,
-      98,
-      0,
-      91,
-      3,
-      "CONDITIONING"
-    ],
-    [
-      78,
-      36,
-      3,
-      91,
-      6,
-      "LIST"
-    ],
-    [
-      80,
-      95,
-      0,
-      101,
-      0,
-      "*"
-    ],
-    [
-      81,
-      101,
-      0,
-      94,
-      0,
-      "CLIP"
-    ],
-    [
-      82,
-      101,
-      0,
-      98,
-      0,
-      "CLIP"
-    ],
-    [
-      84,
-      103,
-      0,
-      102,
-      0,
-      "DCMODEL"
-    ],
-    [
-      85,
-      91,
-      0,
-      102,
-      1,
-      "LATENT"
-    ],
-    [
-      86,
-      103,
-      0,
-      91,
-      0,
-      "DCMODEL"
-    ],
-    [
-      87,
-      102,
-      0,
-      104,
-      0,
-      "IMAGE"
-    ],
-    [
-      88,
-      104,
-      0,
-      105,
-      0,
-      "IMAGE"
-    ],
-    [
-      89,
-      91,
-      1,
-      105,
-      1,
-      "INDICES"
-    ],
-    [
-      90,
-      36,
-      4,
-      105,
-      2,
-      "DIR"
-    ],
-    [
-      92,
-      104,
-      0,
-      106,
-      0,
-      "IMAGE"
-    ],
-    [
-      93,
-      89,
-      4,
-      104,
-      1,
-      "RATIO"
-    ],
-    [
-      96,
-      105,
-      0,
-      110,
-      0,
-      "FILES"
-    ],
-    [
-      97,
-      36,
-      6,
-      110,
-      7,
-      "STRING"
-    ],
-    [
-      98,
-      36,
-      4,
-      110,
-      2,
-      "DIR"
-    ],
-    [
-      99,
-      36,
-      5,
-      110,
-      3,
-      "FILENAME"
-    ],
-    [
-      100,
-      36,
-      3,
-      110,
-      1,
-      "LIST"
-    ],
-    [
-      101,
-      89,
-      0,
-      91,
-      4,
-      "IMAGE"
-    ]
-  ],
-  "groups": [],
-  "config": {},
-  "extra": {
-    "ds": {
-      "scale": 1.6105100000000019,
-      "offset": [
-        -1910.394723759509,
-        529.9316096695928
-      ]
+    "class_type": "YupaoFILMNode",
+    "_meta": {
+      "title": "Yupao's FILM VFI"
     }
   },
-  "version": 0.4
+  "27": {
+    "inputs": {
+      "filename_prefix": "FILM",
+      "file_type": "PNG",
+      "status": true,
+      "error_message": "",
+      "images": [
+        "20",
+        0
+      ],
+      "indices": [
+        "20",
+        1
+      ],
+      "output_subdir": [
+        "36",
+        4
+      ]
+    },
+    "class_type": "YupaoSaveNode",
+    "_meta": {
+      "title": "Yupao's Save Image"
+    }
+  },
+  "32": {
+    "inputs": {
+      "ckpt_name": "GMFSS_fortuna_union_ft_animerun",
+      "clear_cache_after_n_frames": 10,
+      "multiplier": 2,
+      "status": true,
+      "error_message": "",
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "frames": [
+        "90",
+        0
+      ]
+    },
+    "class_type": "YupaoGMFSSNode",
+    "_meta": {
+      "title": "Yupao's GMFSS VFI"
+    }
+  },
+  "33": {
+    "inputs": {
+      "filename_prefix": "GMFSS",
+      "file_type": "PNG",
+      "status": true,
+      "error_message": "",
+      "images": [
+        "32",
+        0
+      ],
+      "indices": [
+        "32",
+        1
+      ],
+      "output_subdir": [
+        "36",
+        4
+      ]
+    },
+    "class_type": "YupaoSaveNode",
+    "_meta": {
+      "title": "Yupao's Save Image"
+    }
+  },
+  "36": {
+    "inputs": {
+      "input_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/d9f0b8968d2244afb0feb73e93f33976/input",
+      "output_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/d9f0b8968d2244afb0feb73e93f33976/output",
+      "method_selection": "",
+      "load_always": true,
+      "available_methods": "G\nP\nF\nT"
+    },
+    "class_type": "YupaoTaskLoadNode",
+    "_meta": {
+      "title": "Yupao's Task Laod"
+    }
+  },
+  "37": {
+    "inputs": {
+      "status": true,
+      "error_message": "",
+      "desinated_method": "T",
+      "m": [
+        "36",
+        6
+      ],
+      "files1": [
+        "33",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "output_directory": [
+        "36",
+        4
+      ],
+      "filename": [
+        "36",
+        5
+      ],
+      "files2": [
+        "42",
+        0
+      ],
+      "files3": [
+        "27",
+        0
+      ]
+    },
+    "class_type": "YupaoTaskSaveNode",
+    "_meta": {
+      "title": "Yupao's Task Save"
+    }
+  },
+  "41": {
+    "inputs": {
+      "ckpt_name": "practical_rife",
+      "clear_cache_after_n_frames": 10,
+      "multiplier": 2,
+      "status": true,
+      "error_message": "",
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "frames": [
+        "90",
+        1
+      ]
+    },
+    "class_type": "YupaoPracticalRIFENode",
+    "_meta": {
+      "title": "Yupao's Practical RIFE VFI"
+    }
+  },
+  "42": {
+    "inputs": {
+      "filename_prefix": "Practical_RIFE",
+      "file_type": "PNG",
+      "status": true,
+      "error_message": "",
+      "images": [
+        "41",
+        0
+      ],
+      "indices": [
+        "41",
+        1
+      ],
+      "output_subdir": [
+        "36",
+        4
+      ]
+    },
+    "class_type": "YupaoSaveNode",
+    "_meta": {
+      "title": "Yupao's Save Image"
+    }
+  },
+  "89": {
+    "inputs": {
+      "status": true,
+      "error_message": "",
+      "image": [
+        "90",
+        3
+      ]
+    },
+    "class_type": "GetImageSizeAndCount",
+    "_meta": {
+      "title": "Get Image Size & Count"
+    }
+  },
+  "90": {
+    "inputs": {
+      "string_input": [
+        "36",
+        6
+      ],
+      "status": true,
+      "error_message": "",
+      "load_always": true,
+      "string_methods": [
+        "36",
+        7
+      ],
+      "input": [
+        "36",
+        0
+      ]
+    },
+    "class_type": "YupaoLogicMethodSelectionNode",
+    "_meta": {
+      "title": "Yupao's Logic - method selection"
+    }
+  },
+  "91": {
+    "inputs": {
+      "steps": 20,
+      "cfg": 7,
+      "eta": 1,
+      "frames": 16,
+      "seed": 243931925609321,
+      "fs": 10,
+      "vae_dtype": "auto",
+      "image_embed_ratio": 1,
+      "augmentation_level": 0,
+      "ddpm_from": 1000,
+      "model": [
+        "103",
+        0
+      ],
+      "clip_vision": [
+        "93",
+        0
+      ],
+      "positive": [
+        "94",
+        0
+      ],
+      "negative": [
+        "98",
+        0
+      ],
+      "images": [
+        "89",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ]
+    },
+    "class_type": "ToonCrafterInterpolation",
+    "_meta": {
+      "title": "ToonCrafter Interpolation"
+    }
+  },
+  "93": {
+    "inputs": {
+      "model": "CLIP-ViT-H-fp16.safetensors"
+    },
+    "class_type": "DownloadAndLoadCLIPVisionModel",
+    "_meta": {
+      "title": "(Down)Load CLIPVisionModel"
+    }
+  },
+  "94": {
+    "inputs": {
+      "text": "cartoon scene",
+      "clip": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "95": {
+    "inputs": {
+      "model": "stable-diffusion-2-1-clip-fp16.safetensors"
+    },
+    "class_type": "DownloadAndLoadCLIPModel",
+    "_meta": {
+      "title": "(Down)Load CLIPModel"
+    }
+  },
+  "98": {
+    "inputs": {
+      "text": "talking, deformed hands, bad anatomy",
+      "clip": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "102": {
+    "inputs": {
+      "vae_dtype": "auto",
+      "prune_last_frame": false,
+      "model": [
+        "103",
+        0
+      ],
+      "latent": [
+        "91",
+        0
+      ]
+    },
+    "class_type": "ToonCrafterDecode",
+    "_meta": {
+      "title": "ToonCrafter Decode"
+    }
+  },
+  "103": {
+    "inputs": {
+      "model": "tooncrafter_512_interp-pruned-fp16.safetensors",
+      "dtype": "fp16",
+      "fp8_unet": false
+    },
+    "class_type": "DownloadAndLoadDynamiCrafterModel",
+    "_meta": {
+      "title": "(Down)Load DynamiCrafterModel"
+    }
+  },
+  "104": {
+    "inputs": {
+      "ckpt_name": "4x_APISR_GRL_GAN_generator.pth",
+      "per_batch": 8,
+      "dtype": "fp32",
+      "images": [
+        "102",
+        0
+      ],
+      "ratio": [
+        "89",
+        4
+      ]
+    },
+    "class_type": "APISR_upscale",
+    "_meta": {
+      "title": "APISR Upscale"
+    }
+  },
+  "105": {
+    "inputs": {
+      "filename_prefix": "Tooncrafter",
+      "file_type": "PNG",
+      "status": true,
+      "error_message": "",
+      "images": [
+        "104",
+        0
+      ],
+      "indices": [
+        "91",
+        1
+      ],
+      "output_subdir": [
+        "36",
+        4
+      ]
+    },
+    "class_type": "YupaoSaveNode",
+    "_meta": {
+      "title": "Yupao's Save Image"
+    }
+  },
+  "106": {
+    "inputs": {
+      "frame_rate": 8,
+      "loop_count": 0,
+      "filename_prefix": "AnimateDiff",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "pingpong": false,
+      "save_output": true,
+      "images": [
+        "104",
+        0
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "110": {
+    "inputs": {
+      "status": true,
+      "error_message": "",
+      "desinated_method": "Toon",
+      "m": [
+        "36",
+        6
+      ],
+      "files1": [
+        "105",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "output_directory": [
+        "36",
+        4
+      ],
+      "filename": [
+        "36",
+        5
+      ]
+    },
+    "class_type": "YupaoTaskSaveNode",
+    "_meta": {
+      "title": "Yupao's Task Save"
+    }
+  }
 }
