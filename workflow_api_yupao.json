@@ -92,7 +92,7 @@
   "36": {
     "inputs": {
       "input_directory": "/storage/SSD1/hankchen/rest-api-node-jwt-typescript/uploads/39f4247c9299ec65c50d877a44cfbadb/input",
-      "output_directory": "/storage/SSD_4T/hankchen/rest-api-node-jwt-typescript/uploads/d9f0b8968d2244afb0feb73e93f33976/output",
+      "output_directory": "/storage/SSD1/hankchen/rest-api-node-jwt-typescript/uploads/39f4247c9299ec65c50d877a44cfbadb/output",
       "method_selection": "",
       "load_always": true,
       "available_methods": "G\nP\nF\nT"
@@ -229,6 +229,7 @@
       "cfg": 7,
       "eta": 1,
       "frames": 16,
+      "control_after_generate": "fixed",
       "seed": 896100779568987,
       "fs": 10,
       "vae_dtype": "auto",
