@@ -320,6 +320,10 @@
       "latent": [
         "91",
         0
+      ],
+      "out_pick": [
+        "91",
+        2
       ]
     },
     "class_type": "ToonCrafterDecode",
@@ -431,23 +435,6 @@
     "class_type": "YupaoTaskSaveNode",
     "_meta": {
       "title": "Yupao's Task Save"
-    }
-  },
-  "111": {
-    "inputs": {
-      "ckpt_name": "tooncrafter_512_interp_v1/model.ckpt",
-      "vram_opt_strategy": "none",
-      "prompt": "",
-      "seed": 123,
-      "eta": 1,
-      "cfg_scale": 7.5,
-      "steps": 25,
-      "frame_count": 10,
-      "fps": 8
-    },
-    "class_type": "ToonCrafterNode",
-    "_meta": {
-      "title": "ToonCrafter"
     }
   }
 }
