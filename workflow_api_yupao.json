@@ -129,11 +129,11 @@
   "37": {
     "inputs": {
       "status": [
-        "79",
+        "102",
         0
       ],
       "error_message": [
-        "82",
+        "103",
         0
       ],
       "desinated_method": "",
@@ -142,7 +142,7 @@
         6
       ],
       "files1": [
-        "83",
+        "104",
         0
       ],
       "frame_indices": [
@@ -220,93 +220,6 @@
       "title": "Yupao's Save Image"
     }
   },
-  "79": {
-    "inputs": {
-      "select": [
-        "92",
-        0
-      ],
-      "sel_mode": true,
-      "input1": [
-        "33",
-        1
-      ],
-      "input2": [
-        "42",
-        1
-      ],
-      "input3": [
-        "27",
-        1
-      ],
-      "input4": [
-        "94",
-        1
-      ]
-    },
-    "class_type": "ImpactSwitch",
-    "_meta": {
-      "title": "Switch (Any)"
-    }
-  },
-  "82": {
-    "inputs": {
-      "select": [
-        "92",
-        0
-      ],
-      "sel_mode": true,
-      "input1": [
-        "33",
-        2
-      ],
-      "input2": [
-        "42",
-        2
-      ],
-      "input3": [
-        "27",
-        2
-      ],
-      "input4": [
-        "94",
-        2
-      ]
-    },
-    "class_type": "ImpactSwitch",
-    "_meta": {
-      "title": "Switch (Any)"
-    }
-  },
-  "83": {
-    "inputs": {
-      "select": [
-        "92",
-        0
-      ],
-      "sel_mode": true,
-      "input1": [
-        "33",
-        0
-      ],
-      "input2": [
-        "42",
-        0
-      ],
-      "input3": [
-        "27",
-        0
-      ],
-      "input4": [
-        "94",
-        0
-      ]
-    },
-    "class_type": "ImpactSwitch",
-    "_meta": {
-      "title": "Switch (Any)"
-    }
-  },
   "92": {
     "inputs": {
       "string_input": [
@@ -364,6 +277,93 @@
     "class_type": "YupaoSaveNode",
     "_meta": {
       "title": "Yupao's Save Image"
+    }
+  },
+  "102": {
+    "inputs": {
+      "select": [
+        "92",
+        0
+      ],
+      "load_always": true,
+      "input1": [
+        "33",
+        1
+      ],
+      "input2": [
+        "42",
+        1
+      ],
+      "input3": [
+        "27",
+        1
+      ],
+      "input4": [
+        "94",
+        1
+      ]
+    },
+    "class_type": "YupaoSwitchAnyNode",
+    "_meta": {
+      "title": "Yupao's Switch(Any)"
+    }
+  },
+  "103": {
+    "inputs": {
+      "select": [
+        "92",
+        0
+      ],
+      "load_always": true,
+      "input1": [
+        "33",
+        2
+      ],
+      "input2": [
+        "42",
+        2
+      ],
+      "input3": [
+        "27",
+        2
+      ],
+      "input4": [
+        "94",
+        2
+      ]
+    },
+    "class_type": "YupaoSwitchAnyNode",
+    "_meta": {
+      "title": "Yupao's Switch(Any)"
+    }
+  },
+  "104": {
+    "inputs": {
+      "select": [
+        "92",
+        0
+      ],
+      "load_always": true,
+      "input1": [
+        "33",
+        0
+      ],
+      "input2": [
+        "42",
+        0
+      ],
+      "input3": [
+        "27",
+        0
+      ],
+      "input4": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "YupaoSwitchAnyNode",
+    "_meta": {
+      "title": "Yupao's Switch(Any)"
     }
   }
 }
