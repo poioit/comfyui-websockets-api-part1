@@ -301,6 +301,10 @@
       "input4": [
         "94",
         1
+      ],
+      "input5": [
+        "115",
+        1
       ]
     },
     "class_type": "YupaoSwitchAnyNode",
@@ -329,6 +333,10 @@
       ],
       "input4": [
         "94",
+        2
+      ],
+      "input5": [
+        "115",
         2
       ]
     },
@@ -359,11 +367,191 @@
       "input4": [
         "94",
         0
+      ],
+      "input5": [
+        "115",
+        0
       ]
     },
     "class_type": "YupaoSwitchAnyNode",
     "_meta": {
       "title": "Yupao's Switch(Any)"
+    }
+  },
+  "105": {
+    "inputs": {
+      "model": "stable-diffusion-2-1-clip-fp16.safetensors"
+    },
+    "class_type": "DownloadAndLoadCLIPModel",
+    "_meta": {
+      "title": "(Down)Load CLIPModel"
+    }
+  },
+  "106": {
+    "inputs": {
+      "model": "CLIP-ViT-H-fp16.safetensors"
+    },
+    "class_type": "DownloadAndLoadCLIPVisionModel",
+    "_meta": {
+      "title": "(Down)Load CLIPVisionModel"
+    }
+  },
+  "107": {
+    "inputs": {
+      "model": "tooncrafter_512_interp-pruned-fp16.safetensors",
+      "dtype": "fp16",
+      "fp8_unet": false
+    },
+    "class_type": "DownloadAndLoadDynamiCrafterModel",
+    "_meta": {
+      "title": "(Down)Load DynamiCrafterModel"
+    }
+  },
+  "109": {
+    "inputs": {
+      "text": "cartoon scene",
+      "clip": [
+        "105",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "110": {
+    "inputs": {
+      "text": "talking, deformed hands, bad anatomy",
+      "clip": [
+        "105",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "111": {
+    "inputs": {
+      "steps": 20,
+      "cfg": 1,
+      "eta": 0,
+      "frames": 16,
+      "seed": 776918868404926,
+      "fs": 10,
+      "vae_dtype": "auto",
+      "image_embed_ratio": 1,
+      "augmentation_level": 0,
+      "ddpm_from": 1000,
+      "model": [
+        "107",
+        0
+      ],
+      "clip_vision": [
+        "106",
+        0
+      ],
+      "positive": [
+        "109",
+        0
+      ],
+      "negative": [
+        "110",
+        0
+      ],
+      "images": [
+        "113",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ]
+    },
+    "class_type": "ToonCrafterInterpolation",
+    "_meta": {
+      "title": "ToonCrafter Interpolation"
+    }
+  },
+  "112": {
+    "inputs": {
+      "vae_dtype": "auto",
+      "prune_last_frame": false,
+      "model": [
+        "107",
+        0
+      ],
+      "latent": [
+        "111",
+        0
+      ],
+      "out_pick": [
+        "111",
+        2
+      ]
+    },
+    "class_type": "ToonCrafterDecode",
+    "_meta": {
+      "title": "ToonCrafter Decode"
+    }
+  },
+  "113": {
+    "inputs": {
+      "status": true,
+      "error_message": "",
+      "image": [
+        "92",
+        7
+      ]
+    },
+    "class_type": "GetImageSizeAndCount",
+    "_meta": {
+      "title": "Get Image Size & Count"
+    }
+  },
+  "114": {
+    "inputs": {
+      "ckpt_name": "apisr/4x_APISR_GRL_GAN_generator.pth",
+      "per_batch": 16,
+      "dtype": "fp32",
+      "images": [
+        "112",
+        0
+      ],
+      "ratio": [
+        "113",
+        4
+      ]
+    },
+    "class_type": "APISR_upscale",
+    "_meta": {
+      "title": "APISR Upscale"
+    }
+  },
+  "115": {
+    "inputs": {
+      "filename_prefix": "Tooncrafter",
+      "file_type": "PNG",
+      "status": true,
+      "error_message": "",
+      "images": [
+        "114",
+        0
+      ],
+      "indices": [
+        "111",
+        1
+      ],
+      "output_subdir": [
+        "36",
+        4
+      ]
+    },
+    "class_type": "YupaoSaveNode",
+    "_meta": {
+      "title": "Yupao's Save Image"
     }
   }
 }
