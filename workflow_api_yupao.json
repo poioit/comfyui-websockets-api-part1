@@ -115,7 +115,7 @@
   },
   "36": {
     "inputs": {
-      "input_directory": "/home/yptsai/program/ComfyUI/input/interpolation",
+      "input_directory": "/storage/SSD1/hankchen/rest-api-node-jwt-typescript/uploads/3932e154714f2205a12aa475facef9a4/input",
       "output_directory": "/home/yptsai/program/ComfyUI/output/aaa",
       "method_selection": "",
       "load_always": true,
@@ -301,10 +301,6 @@
       "input4": [
         "94",
         1
-      ],
-      "input5": [
-        "115",
-        1
       ]
     },
     "class_type": "YupaoSwitchAnyNode",
@@ -334,10 +330,6 @@
       "input4": [
         "94",
         2
-      ],
-      "input5": [
-        "115",
-        2
       ]
     },
     "class_type": "YupaoSwitchAnyNode",
@@ -366,10 +358,6 @@
       ],
       "input4": [
         "94",
-        0
-      ],
-      "input5": [
-        "115",
         0
       ]
     },
@@ -439,7 +427,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 776918868404926,
+      "seed": 708945158135837,
       "fs": 10,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -552,6 +540,39 @@
     "class_type": "YupaoSaveNode",
     "_meta": {
       "title": "Yupao's Save Image"
+    }
+  },
+  "116": {
+    "inputs": {
+      "status": [
+        "115",
+        1
+      ],
+      "error_message": [
+        "115",
+        2
+      ],
+      "desinated_method": "",
+      "files1": [
+        "115",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "output_directory": [
+        "36",
+        4
+      ],
+      "filename": [
+        "36",
+        5
+      ]
+    },
+    "class_type": "YupaoTaskSaveNode",
+    "_meta": {
+      "title": "Yupao's Task Save"
     }
   }
 }
