@@ -115,7 +115,7 @@
   },
   "36": {
     "inputs": {
-      "input_directory": "/storage/SSD1/hankchen/rest-api-node-jwt-typescript/uploads/3932e154714f2205a12aa475facef9a4/input",
+      "input_directory": "/home/yptsai/program/ComfyUI/input/interpolation",
       "output_directory": "/home/yptsai/program/ComfyUI/output/aaa",
       "method_selection": "",
       "load_always": true,
@@ -427,7 +427,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 708945158135837,
+      "seed": 837989676334782,
       "fs": 10,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -499,25 +499,6 @@
       "title": "Get Image Size & Count"
     }
   },
-  "114": {
-    "inputs": {
-      "ckpt_name": "apisr/4x_APISR_GRL_GAN_generator.pth",
-      "per_batch": 16,
-      "dtype": "fp32",
-      "images": [
-        "112",
-        0
-      ],
-      "ratio": [
-        "113",
-        4
-      ]
-    },
-    "class_type": "APISR_upscale",
-    "_meta": {
-      "title": "APISR Upscale"
-    }
-  },
   "115": {
     "inputs": {
       "filename_prefix": "Tooncrafter",
@@ -525,7 +506,7 @@
       "status": true,
       "error_message": "",
       "images": [
-        "114",
+        "116",
         0
       ],
       "indices": [
@@ -544,15 +525,37 @@
   },
   "116": {
     "inputs": {
-      "status": [
-        "115",
+      "width": [
+        "113",
         1
       ],
-      "error_message": [
-        "115",
+      "height": [
+        "113",
         2
       ],
+      "load_always": true,
+      "model": "/storage/AI-Team/yptsai/program/ComfyUI/custom_nodes/AnimeAssist_comfyui/ckpts/upscale/up4x-latest-conservative.pth",
+      "status": "",
+      "error_message": "",
+      "input": [
+        "112",
+        0
+      ]
+    },
+    "class_type": "YupaoUpscaleNode",
+    "_meta": {
+      "title": "Yupao's upscale"
+    }
+  },
+  "122": {
+    "inputs": {
+      "status": true,
+      "error_message": "",
       "desinated_method": "",
+      "m": [
+        "36",
+        6
+      ],
       "files1": [
         "115",
         0
