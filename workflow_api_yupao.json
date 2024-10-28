@@ -427,7 +427,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 837989676334782,
+      "seed": 878069577557088,
       "fs": 10,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -526,15 +526,15 @@
   "116": {
     "inputs": {
       "width": [
-        "113",
-        1
+        "36",
+        10
       ],
       "height": [
-        "113",
-        2
+        "36",
+        11
       ],
       "load_always": true,
-      "model": "/storage/AI-Team/yptsai/program/ComfyUI/custom_nodes/AnimeAssist_comfyui/ckpts/upscale/up4x-latest-conservative.pth",
+      "model": "/storage/AI-Team/yptsai/program/ComfyUI/custom_nodes/AnimeAssist_comfyui/ckpts/upscale/pro-conservative-up3x.pth",
       "status": "",
       "error_message": "",
       "input": [
