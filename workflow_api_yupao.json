@@ -115,8 +115,8 @@
   },
   "36": {
     "inputs": {
-      "input_directory": "/home/yptsai/program/ComfyUI/input/interpolation",
-      "output_directory": "/home/yptsai/program/ComfyUI/output/aaa",
+      "input_directory": "/home/ian.lin/8acbd7fcd2612d7530a77c0e9962bef8/input",
+      "output_directory": "/home/ian.lin/8acbd7fcd2612d7530a77c0e9962bef8/output",
       "method_selection": "",
       "load_always": true,
       "available_methods": "G\nP\nF\nA\nT"
@@ -427,7 +427,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 878069577557088,
+      "seed": 378806171045424,
       "fs": 10,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -506,7 +506,7 @@
       "status": true,
       "error_message": "",
       "images": [
-        "116",
+        "130",
         0
       ],
       "indices": [
@@ -536,11 +536,7 @@
       "load_always": true,
       "model": "/storage/AI-Team/yptsai/program/ComfyUI/custom_nodes/AnimeAssist_comfyui/ckpts/upscale/pro-conservative-up3x.pth",
       "status": "",
-      "error_message": "",
-      "input": [
-        "112",
-        0
-      ]
+      "error_message": ""
     },
     "class_type": "YupaoUpscaleNode",
     "_meta": {
@@ -576,6 +572,30 @@
     "class_type": "YupaoTaskSaveNode",
     "_meta": {
       "title": "Yupao's Task Save"
+    }
+  },
+  "130": {
+    "inputs": {
+      "width": [
+        "36",
+        10
+      ],
+      "height": [
+        "36",
+        11
+      ],
+      "load_always": true,
+      "model": "pro-conservative-up3x.pth",
+      "status": true,
+      "error_message": "",
+      "image": [
+        "112",
+        0
+      ]
+    },
+    "class_type": "YupaoUpscaleNode",
+    "_meta": {
+      "title": "Yupao's upscale"
     }
   }
 }
