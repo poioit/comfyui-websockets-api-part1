@@ -85,8 +85,8 @@
   },
   "36": {
     "inputs": {
-      "input_directory": "/home/ian.lin/8acbd7fcd2612d7530a77c0e9962bef8/input",
-      "output_directory": "/home/ian.lin/8acbd7fcd2612d7530a77c0e9962bef8/output",
+      "input_directory": "/home/yptsai/program/ComfyUI/input/interpolation",
+      "output_directory": "/home/yptsai/program/ComfyUI/output/aaa",
       "method_selection": "",
       "load_always": true,
       "available_methods": "G\nP\nF\nA\nT"
@@ -397,13 +397,8 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-<<<<<<< HEAD
-      "seed": 378806171045424,
-      "fs": 10,
-=======
       "seed": 23489705292431,
       "fs": 30,
->>>>>>> 6c577b0 (add ROI and resolved conflict)
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
       "augmentation_level": 0,
@@ -473,11 +468,7 @@
         2
       ],
       "images": [
-<<<<<<< HEAD
-        "130",
-=======
         "165",
->>>>>>> 6c577b0 (add ROI and resolved conflict)
         0
       ],
       "indices": [
@@ -494,29 +485,6 @@
       "title": "Yupao's Save Image"
     }
   },
-<<<<<<< HEAD
-  "116": {
-    "inputs": {
-      "width": [
-        "36",
-        10
-      ],
-      "height": [
-        "36",
-        11
-      ],
-      "load_always": true,
-      "model": "/storage/AI-Team/yptsai/program/ComfyUI/custom_nodes/AnimeAssist_comfyui/ckpts/upscale/pro-conservative-up3x.pth",
-      "status": "",
-      "error_message": ""
-    },
-    "class_type": "YupaoUpscaleNode",
-    "_meta": {
-      "title": "Yupao's upscale"
-    }
-  },
-=======
->>>>>>> 6c577b0 (add ROI and resolved conflict)
   "122": {
     "inputs": {
       "status": [
@@ -554,22 +522,6 @@
       "title": "Yupao's Task Save"
     }
   },
-<<<<<<< HEAD
-  "130": {
-    "inputs": {
-      "width": [
-        "36",
-        10
-      ],
-      "height": [
-        "36",
-        11
-      ],
-      "load_always": true,
-      "model": "pro-conservative-up3x.pth",
-      "status": true,
-      "error_message": "",
-=======
   "140": {
     "inputs": {
       "upscale_method": "lanczos",
@@ -862,7 +814,6 @@
         "140",
         2
       ],
->>>>>>> 6c577b0 (add ROI and resolved conflict)
       "image": [
         "112",
         0
