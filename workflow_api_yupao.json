@@ -96,43 +96,6 @@
       "title": "Yupao's Task Laod"
     }
   },
-  "37": {
-    "inputs": {
-      "status": [
-        "102",
-        0
-      ],
-      "error_message": [
-        "103",
-        0
-      ],
-      "desinated_method": "",
-      "m": [
-        "36",
-        6
-      ],
-      "files1": [
-        "104",
-        0
-      ],
-      "frame_indices": [
-        "36",
-        3
-      ],
-      "output_directory": [
-        "36",
-        4
-      ],
-      "filename": [
-        "36",
-        5
-      ]
-    },
-    "class_type": "YupaoTaskSaveNode",
-    "_meta": {
-      "title": "Yupao's Task Save"
-    }
-  },
   "41": {
     "inputs": {
       "ckpt_name": "practical_rife",
@@ -224,15 +187,15 @@
       "filename_prefix": "keyframe",
       "file_type": "PNG",
       "status": [
-        "164",
+        "167",
         1
       ],
       "error_message": [
-        "164",
+        "167",
         2
       ],
       "images": [
-        "164",
+        "167",
         0
       ],
       "indices": [
@@ -397,7 +360,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 23489705292431,
+      "seed": 131478932924610,
       "fs": 30,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -722,42 +685,6 @@
       "title": "Yupao's Composite Image with BBox"
     }
   },
-  "164": {
-    "inputs": {
-      "width": [
-        "36",
-        8
-      ],
-      "height": [
-        "36",
-        9
-      ],
-      "status": [
-        "92",
-        1
-      ],
-      "error_message": [
-        "92",
-        2
-      ],
-      "images": [
-        "92",
-        6
-      ],
-      "bboxes": [
-        "141",
-        3
-      ],
-      "frame_indices": [
-        "36",
-        3
-      ]
-    },
-    "class_type": "YupaoCompositeWithBBoxNode",
-    "_meta": {
-      "title": "Yupao's Composite Image with BBox"
-    }
-  },
   "165": {
     "inputs": {
       "width": [
@@ -822,6 +749,190 @@
     "class_type": "YupaoUpscaleNode",
     "_meta": {
       "title": "Yupao's upscale"
+    }
+  },
+  "167": {
+    "inputs": {
+      "width": [
+        "36",
+        8
+      ],
+      "height": [
+        "36",
+        9
+      ],
+      "status": [
+        "92",
+        1
+      ],
+      "error_message": [
+        "92",
+        2
+      ],
+      "images": [
+        "92",
+        6
+      ],
+      "bboxes": [
+        "141",
+        3
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ]
+    },
+    "class_type": "YupaoCompositeKeyframeWithBBoxNode",
+    "_meta": {
+      "title": "Yupao's Composite Keyframe with BBox"
+    }
+  },
+  "168": {
+    "inputs": {
+      "status": [
+        "145",
+        1
+      ],
+      "error_message": [
+        "145",
+        2
+      ],
+      "desinated_method": "",
+      "m": [
+        "36",
+        6
+      ],
+      "files1": [
+        "145",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "output_directory": [
+        "36",
+        4
+      ],
+      "filename": [
+        "36",
+        5
+      ]
+    },
+    "class_type": "YupaoTaskSaveNode",
+    "_meta": {
+      "title": "Yupao's Task Save"
+    }
+  },
+  "169": {
+    "inputs": {
+      "status": [
+        "42",
+        1
+      ],
+      "error_message": [
+        "42",
+        2
+      ],
+      "desinated_method": "",
+      "m": [
+        "36",
+        6
+      ],
+      "files1": [
+        "42",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "output_directory": [
+        "36",
+        4
+      ],
+      "filename": [
+        "36",
+        5
+      ]
+    },
+    "class_type": "YupaoTaskSaveNode",
+    "_meta": {
+      "title": "Yupao's Task Save"
+    }
+  },
+  "170": {
+    "inputs": {
+      "status": [
+        "27",
+        1
+      ],
+      "error_message": [
+        "27",
+        2
+      ],
+      "desinated_method": "",
+      "m": [
+        "36",
+        6
+      ],
+      "files1": [
+        "27",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "output_directory": [
+        "36",
+        4
+      ],
+      "filename": [
+        "36",
+        5
+      ]
+    },
+    "class_type": "YupaoTaskSaveNode",
+    "_meta": {
+      "title": "Yupao's Task Save"
+    }
+  },
+  "171": {
+    "inputs": {
+      "status": [
+        "94",
+        1
+      ],
+      "error_message": [
+        "94",
+        2
+      ],
+      "desinated_method": "",
+      "m": [
+        "36",
+        6
+      ],
+      "files1": [
+        "94",
+        0
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "output_directory": [
+        "36",
+        4
+      ],
+      "filename": [
+        "36",
+        5
+      ]
+    },
+    "class_type": "YupaoTaskSaveNode",
+    "_meta": {
+      "title": "Yupao's Task Save"
     }
   }
 }
