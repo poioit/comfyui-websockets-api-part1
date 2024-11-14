@@ -160,11 +160,11 @@
         6
       ],
       "status": [
-        "148",
+        "141",
         1
       ],
       "error_message": [
-        "148",
+        "141",
         2
       ],
       "load_always": true,
@@ -173,7 +173,7 @@
         7
       ],
       "input": [
-        "148",
+        "141",
         0
       ]
     },
@@ -360,7 +360,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 131478932924610,
+      "seed": 36577375984585,
       "fs": 30,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -541,6 +541,10 @@
         "32",
         3
       ],
+      "pad": [
+        "141",
+        4
+      ],
       "images": [
         "32",
         0
@@ -589,30 +593,6 @@
       "title": "Yupao's Save Image"
     }
   },
-  "148": {
-    "inputs": {
-      "upscale_method": "lanczos",
-      "scale_by": 2,
-      "max_size": 2048,
-      "min_size": 512,
-      "status": [
-        "141",
-        1
-      ],
-      "error_message": [
-        "141",
-        2
-      ],
-      "image": [
-        "141",
-        0
-      ]
-    },
-    "class_type": "YupaoLimitedImageScaleByNode",
-    "_meta": {
-      "title": "Yupao's Simple Upscale by ratio under limitation"
-    }
-  },
   "162": {
     "inputs": {
       "width": [
@@ -630,6 +610,10 @@
       "error_message": [
         "41",
         3
+      ],
+      "pad": [
+        "141",
+        4
       ],
       "images": [
         "41",
@@ -667,6 +651,10 @@
         "20",
         3
       ],
+      "pad": [
+        "141",
+        4
+      ],
       "images": [
         "20",
         0
@@ -703,6 +691,10 @@
         "166",
         2
       ],
+      "pad": [
+        "141",
+        4
+      ],
       "images": [
         "166",
         0
@@ -724,12 +716,12 @@
   "166": {
     "inputs": {
       "width": [
-        "148",
-        3
+        "141",
+        5
       ],
       "height": [
-        "148",
-        4
+        "141",
+        6
       ],
       "load_always": true,
       "model": "pro-conservative-up3x.pth",
@@ -769,6 +761,7 @@
         "92",
         2
       ],
+      "pad": 0,
       "images": [
         "92",
         6
@@ -933,6 +926,36 @@
     "class_type": "YupaoTaskSaveNode",
     "_meta": {
       "title": "Yupao's Task Save"
+    }
+  },
+  "178": {
+    "inputs": {
+      "filename_prefix": "Toonc",
+      "fps": 6,
+      "compress_level": 4,
+      "images": [
+        "112",
+        0
+      ]
+    },
+    "class_type": "SaveAnimatedPNG",
+    "_meta": {
+      "title": "SaveAnimatedPNG"
+    }
+  },
+  "179": {
+    "inputs": {
+      "filename_prefix": "upscale",
+      "fps": 6,
+      "compress_level": 4,
+      "images": [
+        "166",
+        0
+      ]
+    },
+    "class_type": "SaveAnimatedPNG",
+    "_meta": {
+      "title": "SaveAnimatedPNG"
     }
   }
 }
