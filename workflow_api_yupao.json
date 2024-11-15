@@ -85,7 +85,7 @@
   },
   "36": {
     "inputs": {
-      "input_directory": "/home/yptsai/program/ComfyUI/input/interpolation",
+      "input_directory": "/home/yptsai/program/ComfyUI/input/interpolation/5aa878d040d8bb15d1f28907a5d4dac1/input",
       "output_directory": "/home/yptsai/program/ComfyUI/output/aaa",
       "method_selection": "",
       "load_always": true,
@@ -360,7 +360,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 36577375984585,
+      "seed": 625850407789732,
       "fs": 30,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -761,7 +761,10 @@
         "92",
         2
       ],
-      "pad": 0,
+      "pad": [
+        "141",
+        4
+      ],
       "images": [
         "92",
         6
@@ -926,36 +929,6 @@
     "class_type": "YupaoTaskSaveNode",
     "_meta": {
       "title": "Yupao's Task Save"
-    }
-  },
-  "178": {
-    "inputs": {
-      "filename_prefix": "Toonc",
-      "fps": 6,
-      "compress_level": 4,
-      "images": [
-        "112",
-        0
-      ]
-    },
-    "class_type": "SaveAnimatedPNG",
-    "_meta": {
-      "title": "SaveAnimatedPNG"
-    }
-  },
-  "179": {
-    "inputs": {
-      "filename_prefix": "upscale",
-      "fps": 6,
-      "compress_level": 4,
-      "images": [
-        "166",
-        0
-      ]
-    },
-    "class_type": "SaveAnimatedPNG",
-    "_meta": {
-      "title": "SaveAnimatedPNG"
     }
   }
 }
