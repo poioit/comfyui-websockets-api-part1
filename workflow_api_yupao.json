@@ -31,15 +31,15 @@
       "filename_prefix": "FILM",
       "file_type": "PNG",
       "status": [
-        "163",
-        1
-      ],
-      "error_message": [
-        "163",
+        "20",
         2
       ],
+      "error_message": [
+        "20",
+        3
+      ],
       "images": [
-        "163",
+        "20",
         0
       ],
       "indices": [
@@ -85,7 +85,7 @@
   },
   "36": {
     "inputs": {
-      "input_directory": "/home/yptsai/program/ComfyUI/input/interpolation/5aa878d040d8bb15d1f28907a5d4dac1/input",
+      "input_directory": "/storage/SSD1/hankchen/rest-api-node-jwt-typescript/uploads/3edd3c922345df8181bfc59e34d69707/input",
       "output_directory": "/home/yptsai/program/ComfyUI/output/aaa",
       "method_selection": "",
       "load_always": true,
@@ -128,15 +128,15 @@
       "filename_prefix": "Practical_RIFE",
       "file_type": "PNG",
       "status": [
-        "162",
-        1
-      ],
-      "error_message": [
-        "162",
+        "41",
         2
       ],
+      "error_message": [
+        "41",
+        3
+      ],
       "images": [
-        "162",
+        "41",
         0
       ],
       "indices": [
@@ -160,12 +160,12 @@
         6
       ],
       "status": [
-        "141",
-        1
+        "36",
+        10
       ],
       "error_message": [
-        "141",
-        2
+        "36",
+        11
       ],
       "load_always": true,
       "string_methods": [
@@ -173,7 +173,7 @@
         7
       ],
       "input": [
-        "141",
+        "36",
         0
       ]
     },
@@ -187,16 +187,16 @@
       "filename_prefix": "keyframe",
       "file_type": "PNG",
       "status": [
-        "167",
+        "92",
         1
       ],
       "error_message": [
-        "167",
+        "92",
         2
       ],
       "images": [
-        "167",
-        0
+        "92",
+        6
       ],
       "indices": [
         "36",
@@ -360,7 +360,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 625850407789732,
+      "seed": 1031986430004038,
       "fs": 30,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -492,16 +492,16 @@
       "height": 320,
       "crop": "disabled",
       "status": [
-        "92",
+        "141",
         1
       ],
       "error_message": [
-        "92",
+        "141",
         2
       ],
       "image": [
-        "92",
-        7
+        "141",
+        0
       ]
     },
     "class_type": "YupaoSimpleUpscaleNode",
@@ -511,11 +511,17 @@
   },
   "141": {
     "inputs": {
-      "status": true,
-      "error_message": "",
+      "status": [
+        "92",
+        1
+      ],
+      "error_message": [
+        "92",
+        2
+      ],
       "images": [
-        "36",
-        0
+        "92",
+        7
       ]
     },
     "class_type": "YupaoCalcBBoxAndCropNode",
@@ -523,60 +529,20 @@
       "title": "Yupao's BBoxCalc&Crop"
     }
   },
-  "144": {
-    "inputs": {
-      "width": [
-        "36",
-        8
-      ],
-      "height": [
-        "36",
-        9
-      ],
-      "status": [
-        "32",
-        2
-      ],
-      "error_message": [
-        "32",
-        3
-      ],
-      "pad": [
-        "141",
-        4
-      ],
-      "images": [
-        "32",
-        0
-      ],
-      "bboxes": [
-        "141",
-        3
-      ],
-      "frame_indices": [
-        "36",
-        3
-      ]
-    },
-    "class_type": "YupaoCompositeWithBBoxNode",
-    "_meta": {
-      "title": "Yupao's Composite Image with BBox"
-    }
-  },
   "145": {
     "inputs": {
       "filename_prefix": "GMFSS",
       "file_type": "PNG",
       "status": [
-        "144",
-        1
-      ],
-      "error_message": [
-        "144",
+        "32",
         2
       ],
+      "error_message": [
+        "32",
+        3
+      ],
       "images": [
-        "144",
+        "32",
         0
       ],
       "indices": [
@@ -591,86 +557,6 @@
     "class_type": "YupaoSaveNode",
     "_meta": {
       "title": "Yupao's Save Image"
-    }
-  },
-  "162": {
-    "inputs": {
-      "width": [
-        "36",
-        8
-      ],
-      "height": [
-        "36",
-        9
-      ],
-      "status": [
-        "41",
-        2
-      ],
-      "error_message": [
-        "41",
-        3
-      ],
-      "pad": [
-        "141",
-        4
-      ],
-      "images": [
-        "41",
-        0
-      ],
-      "bboxes": [
-        "141",
-        3
-      ],
-      "frame_indices": [
-        "36",
-        3
-      ]
-    },
-    "class_type": "YupaoCompositeWithBBoxNode",
-    "_meta": {
-      "title": "Yupao's Composite Image with BBox"
-    }
-  },
-  "163": {
-    "inputs": {
-      "width": [
-        "36",
-        8
-      ],
-      "height": [
-        "36",
-        9
-      ],
-      "status": [
-        "20",
-        2
-      ],
-      "error_message": [
-        "20",
-        3
-      ],
-      "pad": [
-        "141",
-        4
-      ],
-      "images": [
-        "20",
-        0
-      ],
-      "bboxes": [
-        "141",
-        3
-      ],
-      "frame_indices": [
-        "36",
-        3
-      ]
-    },
-    "class_type": "YupaoCompositeWithBBoxNode",
-    "_meta": {
-      "title": "Yupao's Composite Image with BBox"
     }
   },
   "165": {
@@ -741,46 +627,6 @@
     "class_type": "YupaoUpscaleNode",
     "_meta": {
       "title": "Yupao's upscale"
-    }
-  },
-  "167": {
-    "inputs": {
-      "width": [
-        "36",
-        8
-      ],
-      "height": [
-        "36",
-        9
-      ],
-      "status": [
-        "92",
-        1
-      ],
-      "error_message": [
-        "92",
-        2
-      ],
-      "pad": [
-        "141",
-        4
-      ],
-      "images": [
-        "92",
-        6
-      ],
-      "bboxes": [
-        "141",
-        3
-      ],
-      "frame_indices": [
-        "36",
-        3
-      ]
-    },
-    "class_type": "YupaoCompositeKeyframeWithBBoxNode",
-    "_meta": {
-      "title": "Yupao's Composite Keyframe with BBox"
     }
   },
   "168": {
