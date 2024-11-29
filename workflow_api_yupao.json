@@ -89,7 +89,7 @@
       "output_directory": "/home/yptsai/program/ComfyUI/output/aaa",
       "method_selection": "",
       "load_always": true,
-      "available_methods": "G\nP\nF\nA\nT\nU",
+      "available_methods": "G\nP\nF\nA\nT\nU\nW\nX",
       "speak_and_recognation": true
     },
     "class_type": "YupaoTaskLoadNode",
@@ -277,7 +277,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 679301298904343,
+      "seed": 52887445899367,
       "fs": 30,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -738,7 +738,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 744663042197844,
+      "seed": 234268512019536,
       "fs": 30,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -868,7 +868,7 @@
   },
   "178": {
     "inputs": {
-      "filename_prefix": "Tooncrafter",
+      "filename_prefix": "NoSRTooncrafter",
       "file_type": "PNG",
       "status": [
         "177",
