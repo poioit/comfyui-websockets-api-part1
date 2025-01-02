@@ -74,8 +74,8 @@
         3
       ],
       "frames": [
-        "92",
-        3
+        "182",
+        0
       ]
     },
     "class_type": "YupaoGMFSSNode",
@@ -129,7 +129,7 @@
       "filename_prefix": "Practical_RIFE",
       "file_type": "PNG",
       "status": [
-        "41",
+        "189",
         2
       ],
       "error_message": [
@@ -137,7 +137,7 @@
         3
       ],
       "images": [
-        "41",
+        "189",
         0
       ],
       "indices": [
@@ -277,7 +277,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 52887445899367,
+      "seed": 1047670402445213,
       "fs": 30,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -459,7 +459,7 @@
         3
       ],
       "images": [
-        "32",
+        "192",
         0
       ],
       "indices": [
@@ -738,7 +738,7 @@
       "cfg": 1,
       "eta": 0,
       "frames": 16,
-      "seed": 234268512019536,
+      "seed": 568340826518422,
       "fs": 30,
       "vae_dtype": "auto",
       "image_embed_ratio": 1,
@@ -931,6 +931,218 @@
     "class_type": "YupaoTaskSaveNode",
     "_meta": {
       "title": "Yupao's Task Save"
+    }
+  },
+  "182": {
+    "inputs": {
+      "status": [
+        "36",
+        10
+      ],
+      "error_message": [
+        "36",
+        11
+      ],
+      "load_always": true,
+      "images": [
+        "92",
+        3
+      ]
+    },
+    "class_type": "YupaoBackgroundReplacementNode",
+    "_meta": {
+      "title": "Yupao's Background Repalcement"
+    }
+  },
+  "183": {
+    "inputs": {
+      "max_distance": [
+        "182",
+        5
+      ],
+      "status": [
+        "182",
+        2
+      ],
+      "error_message": [
+        "182",
+        3
+      ],
+      "load_always": true,
+      "images": [
+        "32",
+        0
+      ],
+      "in_bg_color": [
+        "182",
+        4
+      ]
+    },
+    "class_type": "YupaoAlphaEstimationNode",
+    "_meta": {
+      "title": "Yupao's Simple Alpha Estimation"
+    }
+  },
+  "186": {
+    "inputs": {
+      "images": [
+        "182",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "187": {
+    "inputs": {
+      "images": [
+        "192",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "188": {
+    "inputs": {
+      "images": [
+        "36",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "189": {
+    "inputs": {
+      "max_distance": [
+        "182",
+        5
+      ],
+      "status": [
+        "41",
+        2
+      ],
+      "error_message": [
+        "41",
+        3
+      ],
+      "load_always": true,
+      "images": [
+        "41",
+        0
+      ],
+      "in_bg_color": [
+        "182",
+        4
+      ]
+    },
+    "class_type": "YupaoAlphaEstimationNode",
+    "_meta": {
+      "title": "Yupao's Simple Alpha Estimation"
+    }
+  },
+  "190": {
+    "inputs": {
+      "status": [
+        "36",
+        10
+      ],
+      "error_message": [
+        "36",
+        11
+      ],
+      "load_always": true,
+      "images": [
+        "92",
+        3
+      ]
+    },
+    "class_type": "YupaoBlackBackgroundReplaceNode",
+    "_meta": {
+      "title": "Yupao's Black Background Repalcement"
+    }
+  },
+  "191": {
+    "inputs": {
+      "ckpt_name": "GMFSS_fortuna_union_ft_animerun",
+      "clear_cache_after_n_frames": 10,
+      "multiplier": 2,
+      "status": [
+        "190",
+        2
+      ],
+      "error_message": [
+        "190",
+        3
+      ],
+      "frame_indices": [
+        "36",
+        3
+      ],
+      "frames": [
+        "190",
+        0
+      ]
+    },
+    "class_type": "YupaoGMFSSNode",
+    "_meta": {
+      "title": "Yupao's GMFSS VFI"
+    }
+  },
+  "192": {
+    "inputs": {
+      "max_distance": [
+        "182",
+        5
+      ],
+      "load_always": true,
+      "images1": [
+        "32",
+        0
+      ],
+      "images2": [
+        "191",
+        0
+      ],
+      "in_bg_color": [
+        "182",
+        4
+      ]
+    },
+    "class_type": "YupaoAlphaEstimationWithBlackBackgroundNode",
+    "_meta": {
+      "title": "Yupao's Alpha Estimation with Spec. and Black Background"
+    }
+  },
+  "193": {
+    "inputs": {
+      "images": [
+        "191",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "194": {
+    "inputs": {
+      "images": [
+        "32",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
     }
   }
 }
